@@ -1,0 +1,40 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Edit business data </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('504750');expand('478759');highlight('535631')}">
+<h3 id="t535631" class="heading3">Edit business data</h3>
+<p class="bodytext">The company type describes the business of the company. </p>
+<p class="bodytext">If a parent company was entered, it appears in the <strong class="specialbold">Parent Company</strong> box.</p>
+<p class="bodytext">The project context text can be used as search criteria or when filtering the suppliers. </p>
+<ol class="listnumber"><li class="listnumber">Select the <strong class="specialbold">Project Supplier</strong> indicator to define the supplier as a project supplier. This designation restricts the use of the supplier to the current project.</li><li class="listnumber">Use the option selected from the drop-down list in the <strong class="specialbold">Allowed For</strong> box to specify how the supplier can be used in Smart Materials. <p class="listcontinue">The available options are:</p>
+<p class="listnumberindent2"><strong class="specialbold">Agreements </strong>- This supplier can be assigned to agreements and inquiries.</p>
+<p class="listnumberindent2"><strong class="specialbold">Inquiries </strong>- This supplier can only be assigned to inquiries, and he cannot be used to create agreements.</p>
+<p class="listnumberindent2"><strong class="specialbold">None </strong>- You cannot use this supplier for agreements or for inquiries.</p>
+</li><li class="listnumber">Click <strong class="specialbold">Country Code</strong> <img id="f471290" src="471290.png" alt="LOVButton" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"> and select the supplier's country.</li><li class="listnumber">Select the <strong class="specialbold">Approved </strong>check box to indicate that the supplier has been approved. <p class="listcontinue"><img id="f803309" src="803309.png" alt="" height="13" width="67" vspace="0" hspace="0" align="bottom" border="0"></p>
+<ul class="listbullet2"><li class="listbullet2">Depending on the setting of project default ZP_SUP_NA, only approved suppliers are available on the <strong class="specialbold">Agreements </strong>screen. If ZP_SUP_NA is set to N (default), only approved suppliers can be selected. If this project default is set to Y, suppliers that are not approved are also available.</li><li class="listbullet2">You need the ALLOW SUPPLIER APPROVAL privilege to select the <strong class="specialbold">Approved </strong>check box.</li><li class="listbullet2">The <strong class="specialbold">Approved Date</strong> is automatically set with the current date when you select the <strong class="specialbold">Approved </strong>check box.</li></ul></li></ol>
+
+
+<input id="topicId" type="hidden" value="535631" />
+<input id="topicDescription" type="hidden" value="Edit business data" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 3/24/2016 7:38:44 AM" />-->
+</body>
+</html>

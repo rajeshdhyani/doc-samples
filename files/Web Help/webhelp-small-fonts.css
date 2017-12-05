@@ -1,0 +1,367 @@
+﻿/*
+This stylesheet defines font sizes that correspond to "Small".
+*/
+
+.bodytext 
+{	
+	font-size: 9pt;
+}
+
+.heading1
+{
+	font-size: 13pt;
+}
+
+.heading2
+{
+	font-size: 7pt;
+}
+
+.heading3
+{
+	font-size: 10pt;
+}
+
+.heading4
+{
+	font-size: 10pt;
+}
+
+.heading5
+{
+	font-size: 9pt;
+}
+
+.heading6
+{
+	font-size: 9pt;
+}
+
+.subheading
+{
+	font-size: 9pt;
+}
+
+.whatdoyouwanttodoheading 
+{
+	font-size: 10pt;
+}
+
+li.whatdoyouwanttodolinks
+{
+	font-size: 9pt;
+}
+
+.relatedheading 
+{
+	font-size: 10pt;
+}
+
+
+#index p.indexatoz 
+{
+	font-size: 7pt;
+}
+
+td.index1
+{
+	font-size: 7pt;
+}
+
+td.index2
+{
+	font-size: 7pt;
+}
+
+.toc 
+{
+	font-size: 9pt;
+}
+
+.x-tree-node
+{
+	font-size: 9pt;
+}
+
+.x-panel-header-text {
+	font-size: 13pt;
+}
+
+li.listnumber
+{
+	font-size: 9pt;
+}
+
+li.listbullet 
+{        
+	font-size: 9pt;
+}
+
+li.listbullet2 
+{        
+	font-size: 9pt;
+}
+
+li.listbullet3 
+{        
+	font-size: 9pt;
+}
+
+
+.listcontinue
+{
+	font-size: 9pt;
+}
+
+.indent 
+{
+	font-size: 9pt;
+}
+
+
+.indent2
+{
+	font-size: 9pt;
+}
+
+
+.indent3
+{
+	font-size: 9pt;
+}
+
+
+.indent4
+{
+	font-size: 9pt;
+}
+
+
+li.indentbullet 
+{        
+	font-size: 9pt;
+}
+
+li.indentbullet2 
+{        
+	font-size: 9pt;
+}
+
+
+li.indentbullet3 
+{        
+	font-size: 9pt;
+}
+
+
+li.indentbullet4 
+{        
+	font-size: 9pt;
+}
+
+
+.listcontinue2
+{
+	font-size: 9pt;
+}
+
+.caption 
+{
+	font-size: 9pt;
+}
+
+.tablebodytext 
+{
+	font-size: 9pt;
+}
+
+.tableheading 
+{
+	font-size: 9pt; 
+}
+
+}
+.tableheadingcenter 
+{
+       font-size: 9pt; 
+
+}
+
+
+.tablebodytextcenter 
+{
+       font-size: 9pt; 
+}
+
+
+.tableheadingsmallerfont 
+{
+       font-size: 7pt; 
+
+}
+
+
+.tablebodytextsmallerfont 
+{
+        font-size: 7pt; 
+}
+
+
+.tableinsidelist-bodytext 
+{
+        font-size: 9pt; 
+}
+
+.tableinsidelist-bodytextcenter 
+{
+        font-size: 9pt; 
+
+}
+
+.tableinsidelist-heading
+{
+	font-size: 9pt; 
+ 
+ }
+ 
+.tableinsidelist-headingsmallerfont 
+{
+	font-size: 7pt; 
+	
+ }
+
+.tableinsidelist-bodytextsmallerfont 
+{
+      font-size: 7pt; 
+}
+
+.tableinsidelist-headingcenter 
+{
+	font-size: 9pt;  
+}
+
+ol.tablelistnumber2smallerfont
+{
+	font-size: 7pt; 
+ }
+ 
+
+li.tablelistnumber2smallerfont
+{
+	font-size: 7pt; 
+ }
+ 
+
+ul.tablelistbullet
+{
+	font-size: 9pt; 
+ }
+
+
+li.tablelistbullet
+{
+	font-size: 9pt; 
+ }
+ 
+
+ol.tablelistnumber2
+{
+	font-size: 9pt; 
+ }
+ 
+
+li.tablelistnumber2
+{
+	font-size: 9pt; 
+ }
+ 
+
+ul.tablelistbulletsmallerfont 
+{
+	font-size: 7pt; 
+ }
+
+
+li.tablelistbulletsmallerfont 
+{
+	font-size: 7pt; 
+ }
+
+
+ol.tablelistnumbersmallerfont
+{
+	font-size: 7pt; 
+ }
+ 
+
+li.tablelistnumbersmallerfont
+{
+	font-size: 7pt; 
+ }
+ 
+
+ol.tablelistnumber 
+{
+	font-size: 9pt; 
+ }
+
+
+li.tablelistnumber 
+{
+	font-size: 9pt; 
+ }
+
+
+ul.tablelistbullet2 
+{
+	font-size: 9pt; 
+ }
+
+
+li.tablelistbullet2 
+{
+	font-size: 9pt; 
+ }
+
+
+ul.tablelistbullet2smallerfont 
+{
+	font-size: 7pt; 
+ }
+
+
+li.tablelistbullet2smallerfont 
+{
+	font-size: 7pt; 
+ }
+
+}
+
+
+
+
+.systemresponse 
+{
+        font-size: 9pt;
+}
+
+.copyrightpageheadings 
+{
+        font-size: 11pt;
+}
+
+.copyrighttext 
+{
+        font-size: 9pt;
+}
+
+ol.copyrightalphalist 
+{
+        font-size: 9pt;
+}
+
+li.copyrightalphalist 
+{
+        font-size: 9pt;
+}
+

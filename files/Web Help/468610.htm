@@ -1,0 +1,37 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Edit post agreement information </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('447923');expand('392854');highlight('468610')}">
+<h3 id="t468610" class="heading3">Edit post agreement information</h3>
+<p class="bodytext">The <strong class="specialbold">Post Agreement</strong> panel is not displayed for manual purchase orders, notices to proceed, blanket orders, and master agreements. For agreement type subcontract only <strong class="specialbold">Invoice Retention %</strong>, <strong class="specialbold">Invoice Check</strong>, and <strong class="specialbold">Invoice Tolerance</strong> boxes are displayed.</p>
+<ol class="listnumber"><li class="listnumber">Click <strong class="specialbold">Post Agreement </strong>on the category panel.</li><li class="listnumber">Click <strong class="specialbold">Expediting Level</strong> <img id="f471290" src="471290.png" alt="LOVButton" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"> and select the appropriate level.</li><li class="listnumber">Click <strong class="specialbold">Inspection Level </strong><img id="f471290_1" src="471290.png" alt="LOVButton" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"> and select the appropriate level.</li><li class="listnumber">Click <strong class="specialbold">Criticality Level</strong> <img id="f471290_2" src="471290.png" alt="LOVButton" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"> and select the appropriate level.</li><li class="listnumber">Click <strong class="specialbold">Off Rent Date</strong> <img id="f424153" src="424153.png" alt="CalendarButton" height="16" width="16" vspace="0" hspace="0" align="bottom" border="0"> and select the off rent date.</li><li class="listnumber">Type the retention percentage value in the <strong class="specialbold">Invoice Retention %</strong> box.<p class="listcontinue"><img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The retention percentage value is used to calculate the retention value and the paid amount of an invoice. </p>
+</li><li class="listnumber">Select a value from the list in the<strong class="specialbold"> Invoice Check</strong> box.<p class="listcontinue"><img id="f803309" src="803309.png" alt="" height="13" width="67" vspace="0" hspace="0" align="bottom" border="0"></p>
+<ul class="listbullet2"><li class="listbullet2">You can only change the invoice check value if no invoice exists for the agreement.</li><li class="listbullet2">If the invoice check is set to <strong class="specialbold">2 Way Check</strong>, the invoice quantity cannot be greater than order quantity plus invoice tolerance % of order quantity.</li><li class="listbullet2">If the invoice check is set to <strong class="specialbold">3 Way Check</strong>, the invoice quantity cannot be greater than the order quantity or the received quantity, which of the two is smaller.</li></ul></li><li class="listnumber">Type a percentage value in the<strong class="specialbold"> Invoice Tolerance</strong> box.<p class="listcontinue"><img id="f803308_1" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The invoice tolerance (in %) is used to validate the quantities to be invoiced. If no value is defined on agreement header, the tolerance value defined with project default ZP_INV_TOL is used.</p>
+</li><li class="listnumber">Type a percentage value in the<strong class="specialbold"> Receiving Tolerance</strong> box.<p class="listcontinue"><img id="f803308_2" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The receiving tolerance in % is used to validate the quantities to be received. If no value is defined on agreement header, the tolerance value defined with project default ZC_REC_TOL is used. While receiving against the selected agreement, the received quantity should not be more than order quantity plus receiving tolerance % of order quantity.</p>
+</li></ol>
+
+
+<input id="topicId" type="hidden" value="468610" />
+<input id="topicDescription" type="hidden" value="Edit post agreement information" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 11/29/2016 7:02:57 AM" />-->
+</body>
+</html>

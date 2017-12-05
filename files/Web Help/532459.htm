@@ -1,0 +1,33 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Stop notification display </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('532457');expand('472853');expand('495092');expand('493543');highlight('532459')}">
+<h5 id="t532459" class="heading5">Stop notification display</h5>
+<p class="bodytext">Click <strong class="specialbold">Do not show me the warning again </strong>on the message box to stop the display of messages.</p>
+<p class="bodytext">You can also stop the display of Warning and Information notifications.</p>
+
+
+<input id="topicId" type="hidden" value="532459" />
+<input id="topicDescription" type="hidden" value="Stop notification display" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 8/4/2014 3:37:15 AM" />-->
+</body>
+</html>

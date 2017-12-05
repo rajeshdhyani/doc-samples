@@ -1,0 +1,36 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Split a tagged item </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('675110');expand('392854');highlight('784350')}">
+<h3 id="t784350" class="heading3">Split a tagged item</h3>
+<p class="bodytext">Tagged items can be big and expensive, such as a tank or a compressor. This material is not necessarily delivered as one item. You can split the tagged item to track the individual parts separately.</p>
+<p class="bodytext"><img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The <strong class="specialbold">Split Tag </strong>option is only available if </p>
+<ul class="listbullet2"><li class="listbullet2">the tag number is not UNTAGGED or ---,</li><li class="listbullet2">the item type is TAB, TFM, TOM, TWM, or SWT,</li><li class="listbullet2">and the tagged item is not a detail tag.</li></ul><ol class="listnumber"><li class="listnumber">Select the line item with a tag number you want to split.<p class="listcontinue"><img id="f803308_1" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> A tagged item is identified by an entry in the <strong class="specialbold">Tag Number </strong>box that is not '---' or 'UNTAGGED'. </p>
+</li><li class="listnumber">Click <strong class="specialbold">Split Position </strong><img id="f467425" src="467425.png" alt="SplitLineItemButton" height="18" width="24" vspace="0" hspace="0" align="bottom" border="0"> and select <strong class="specialbold">Split Tag</strong>.</li><li class="listnumber">Enter the number of splits you want to create.</li><li class="listnumber">Click <strong class="specialbold">Split</strong>.<p class="listcontinue"><img id="f803308_2" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The line item (master tag) is copied. The first split of a tagged item creates at least two detail tags.</p>
+</li><li class="listnumber">Click the split indicator <img id="f723335" src="723335.png" alt="SplitIndicator" height="16" width="12" vspace="0" hspace="0" align="bottom" border="0"> in the <strong class="specialbold">Pos </strong>cell to view the detail tags.</li><li class="listnumber">Update the quantity of the detail tags in the <strong class="specialbold">Quantity</strong> cell.</li><li class="listnumber">Click <strong class="specialbold">Save</strong>.</li></ol>
+
+
+<input id="topicId" type="hidden" value="784350" />
+<input id="topicDescription" type="hidden" value="Split a tagged item" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 7/13/2016 10:51:11 AM" />-->
+</body>
+</html>

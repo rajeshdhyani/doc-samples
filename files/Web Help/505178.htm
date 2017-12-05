@@ -1,0 +1,35 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Edit planning item details </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('500941');highlight('505178')}">
+<h2 id="t505178" class="heading2">Edit planning item details</h2>
+<ol class="listnumber"><li class="listnumber">Click the <strong class="specialbold">Planning </strong>task on the dashboard, or select <strong class="specialbold">Planning </strong>from the <strong class="specialbold">Tasks </strong>list.</li><li class="listnumber">Select a planning item in the tree.<p class="listcontinue">The planning item details appear on the right panel.</p>
+</li><li class="listnumber">Update the details as needed.</li><li class="listnumber">Click <strong class="specialbold">Save</strong>.</li></ol><p class="bodytext"><img id="f803309" src="803309.png" alt="" height="13" width="67" vspace="0" hspace="0" align="bottom" border="0"></p>
+<ul class="listbullet"><li class="listbullet">The <strong class="specialbold">Linked to Requisition</strong> and <strong class="specialbold">Linked to Agreement</strong> check boxes indicate, if the planning item is linked to a requisition and/or agreement.</li><li class="listbullet">The progress appears in <strong class="specialbold">Progress 1 </strong>and <strong class="specialbold">Progress 2</strong>.<p class="listcontinue">For every requisition and tag number of the specified planning group, the weight factor 1 (or 2) for all finished milestones are added and the sum 1 (or 2) is then multiplied with the budget 1 (or 2) of the requisition or tagged item. After that, the results of all requisitions and tagged items are again summed up. Finally, this sum is set in relation to the budget 1 (or 2) of this planning group and the result displayed in the <strong class="specialbold">Progress 1</strong> (or <strong class="specialbold">2</strong>) field. </p>
+</li></ul>
+
+
+<input id="topicId" type="hidden" value="505178" />
+<input id="topicDescription" type="hidden" value="Edit planning item details" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 6/8/2015 11:21:17 AM" />-->
+</body>
+</html>

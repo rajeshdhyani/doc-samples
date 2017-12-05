@@ -1,0 +1,56 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Configure the expediting tree </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+</head>
+<body  onload="if (isTOCLoaded()) {expand('393251');highlight('447925')}">
+<h2 id="t447925" class="heading2">Configure the expediting tree</h2>
+<p class="bodytext">You can set the appearance of the tree panel according to your own preferences. These settings are stored and used when you open the tree again.</p>
+<ol class="listnumber"><li class="listnumber">Click the <strong class="specialbold">Expediting </strong>task on the dashboard, or select <strong class="specialbold">Expediting</strong> from the <strong class="specialbold">Tasks </strong>list.</li><li class="listnumber">Drag the right frame of the panel to change the panel size.</li><li class="listnumber">Click <img id="f459835" src="459835.png" class="embeddedolefiletemplate" alt="CollapseTreeArrow" height="14" width="11" vspace="0" hspace="0" align="bottom" border="0"> in the right corner of the panel to hide the panel, and click the vertical tab to display the panel again.</li><li class="listnumber">Select an option from the <strong class="specialbold">Group By</strong> drop-down list to change the group-by criterion for the displayed agreements. <p class="listcontinue">By default, the records are grouped by none, which means the tree displays a flat list of the agreements. The available group by options are</p>
+<ul class="listbullet2"><li class="listbullet2">None</li><li class="listbullet2">Supplier</li><li class="listbullet2">Release Note</li><li class="listbullet2">Expediter</li><li class="listbullet2">Inspector</li></ul></li></ol><p class="subheading">Group by supplier</p>
+<p class="bodytext">With this option, all suppliers with assigned agreements are displayed.</p>
+<ol class="listnumber"><li class="listnumber">Select a supplier<p class="listcontinue">All agreements assigned to the supplier appear on the summary panel with the agreement number, the short description, a <a id="h474395" class="expandingblocktemplate" title="Timeline" href="javascript:toggleBlock('474395')" target="_self"><img id="i474395" class="expandicon" src="arrowright.gif" alt="" border="0">Timeline</a> and the status.</p>
+<div id="d474395" class="expandingblock" style="display:none"><p class="bodytext">The picture below shows an example of the timeline.</p>
+<p class="bodytext"><img id="f475088" src="475088.png" alt="timeline" height="117" width="847" vspace="0" hspace="0" align="bottom" border="0"></p>
+<p class="bodytext">The initial range of an agreement's timeline is specified by the earliest planned delivery date and the latest planned arrival on site date, which are calculated across all item shipments of the agreement. The earliest planned delivery date (1) is identified by the <strong class="specialbold">Delivery Date</strong> indicator in the routing method schedule; this date appears under the start of the timeline. The latest planned arrival on site date (2) appears under the end of the timeline. </p>
+<p class="bodytext">The current agreement status (3) appears on the left above the timeline, together with the related destination in brackets. The status is determined by the item shipment with the least progress, retrieved from the actual dates found in the corresponding routing schedules. The corresponding actual date (4), forecasted date (5), and planned date (6) are represented by indicators on the timeline.</p>
+<p class="bodytext"><img id="f803310" src="803310.png" alt="SHARED Tip" height="13" width="41" vspace="0" hspace="0" align="bottom" border="0"> Hovering over an indicator brings up a tooltip showing the date value.</p>
+</div></li><li class="listnumber">Click <img id="f393559" src="393559.png" alt="" height="12" width="8" vspace="0" hspace="0" align="bottom" border="0"> to expand the supplier node and to view the assigned agreements.</li><li class="listnumber">Select an agreement to view the details.</li></ol><p class="subheading">Group by release note</p>
+<p class="bodytext">This option allows you to search for particular release notes without knowing the agreement.</p>
+<ol class="listnumber"><li class="listnumber">Select a release note.</li><li class="listnumber">Click <img id="f393559_1" src="393559.png" alt="" height="12" width="8" vspace="0" hspace="0" align="bottom" border="0"> to expand the release note node and to view the associated agreement.</li><li class="listnumber">Click the agreement number to view the details.</li></ol><p class="subheading">Group by expediter</p>
+<p class="bodytext">With this option, all expediters with assigned agreements are displayed.</p>
+<ol class="listnumber"><li class="listnumber">Select an expediter.</li><li class="listnumber">Click <img id="f393559_2" src="393559.png" alt="" height="12" width="8" vspace="0" hspace="0" align="bottom" border="0"> to expand the expediter node and to view the assigned agreements.</li><li class="listnumber">Select an agreement to view the details.</li></ol><p class="subheading">Group by inspector</p>
+<p class="bodytext">With this option, all inspectors with assigned agreements are displayed.</p>
+<ol class="listnumber"><li class="listnumber">Select an inspector.</li><li class="listnumber">Click <img id="f393559_3" src="393559.png" alt="" height="12" width="8" vspace="0" hspace="0" align="bottom" border="0"> to expand the inspector node and to view the assigned agreements.</li><li class="listnumber">Select an agreement to view the details.</li></ol><p class="subheading">Customize the expediting status</p>
+<p class="bodytext">The expediting status of an agreement is displayed in the tree.</p>
+<p class="bodytext">The status is identified by the CIP function <a id="h478766" class="expandingblocktemplate" title="M_PCK_EXP_CUSTOM.GET_EXPED_STATUS" href="javascript:toggleBlock('478766')" target="_self"><img id="i478766" class="expandicon" src="arrowright.gif" alt="" border="0">M_PCK_EXP_CUSTOM.GET_EXPED_STATUS</a>.</p>
+<div id="d478766" class="expandingblock" style="display:none"><p class="bodytext">This function has the business object type (POH for agreement, or RELN for release note) and the primary key of the business object (p_pk_id) as input parameters, and it returns the expediting status (m_type_status) with the following information:</p>
+<ul class="listbullet"><li class="listbullet">Status as freetext. For example 'Received' or 'Shipped'.</li><li class="listbullet">Color, in which the status is displayed on the tree. For example, purple, green, or blue.</li><li class="listbullet">Priority. The priority specifies the hierarchy of the status display in ascending order. For example, priority 1 is displayed on top of the tree, priority 2 underneath, and so forth.</li></ul><p class="bodytext">The standard CIP delivered with the software retrieves the following values when called for an agreement:</p>
+<ul class="listbullet"><li class="listbullet">Received, priority 2, green - at least one item shipment of the agreement is received (not all item shipments must be received). An item shipment is considered as received if its Actual On Site date is set.</li><li class="listbullet">Shipped, priority 3, dark orange - at least one item shipment of the agreement is shipped (not all item shipments must be shipped). An item shipment is considered as shipped if its Actual Ship Date is set. </li><li class="listbullet">RN (release note) complete, priority 6, blue - all item shipments of the agreement are placed on release notes.</li><li class="listbullet">IRC (inspection release certificate) complete, priority 5, plum - all item shipments of the agreement are placed on IRCs.</li><li class="listbullet">MCS (material certificate summary) complete, priority 4, purple - all item shipments of the agreement are placed on MCSs.</li><li class="listbullet">Undefined, priority 1, black - the item shipment status of the agreement does not match any of the aforementioned.</li></ul><p class="bodytext">If the CIP is called for a release note, it retrieves the following values:</p>
+<ul class="listbullet"><li class="listbullet">Traffic OSD, priority 1, blue - for the release note or any package or package item of the release note an OSD has been created by traffic that is not closed. </li><li class="listbullet">Site OSD, priority 2, blue violet - for the release note or any package or package item of the release note an OSD has been created by site that is not closed.</li><li class="listbullet">Invoice OK, priority 4, green - the invoice for all item shipments of this release note has been checked and marked as OK, that is, the <strong class="specialbold">Invoice OK</strong> check box is selected.</li><li class="listbullet">Packed, priority 5, cornflower blue - all item shipments of the release note with all their quantities have been placed on packages based on the release note.</li><li class="listbullet">B/L or AWB, priority 6, dark green - <strong class="specialbold">B/L or AWB</strong> is marked, indicating that a bill of lading or an air way bill number has been entered on any means of conveyance.</li><li class="listbullet">Approved, priority 7, orange - the release note is approved.</li><li class="listbullet">Undefined, priority 3, black - the release note status does not match any of the aforementioned.</li></ul><p class="bodytext"></p>
+</div>
+
+
+<input id="topicId" type="hidden" value="447925" />
+<input id="topicDescription" type="hidden" value="Configure the expediting tree" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 4/28/2017 7:30:16 AM" />-->
+</body>
+</html>

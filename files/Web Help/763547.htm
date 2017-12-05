@@ -1,0 +1,42 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> View and edit agreement total costs </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('763545');expand('392854');highlight('763547')}">
+<h3 id="t763547" class="heading3">View and edit agreement total costs</h3>
+<p class="bodytext">The total costs of the agreement are displayed on the <strong class="specialbold">Total Costs</strong> screen, grouped by currencies.</p>
+<p class="bodytext"><img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The number of the cost and tax decimal places is controlled by the setting of project default ZP_DECP_EP.</p>
+<p class="bodytext">The total costs of an agreement are calculated under consideration of the line item quantities and unit prices, the line item other costs, and the agreement other costs. The calculation of change order (CO) total costs includes all previous agreement supplements. If only the costs of the actual CO shall be calculated, the project default ZP_CODELTA must be set to Y.</p>
+<p class="bodytext">The last, changed, and total cost are automatically calculated and cannot be changed. The last cost is the total cost of the agreement prior to the creation of a CO, and the changed cost is the difference between the previous and the actual total cost. Both, the last and changed cost value are 0 (zero) in case of an agreement supplement 0.</p>
+<p class="bodytext">To apply a tax rate on the total costs of an agreement, proceed as follows.</p>
+<ol class="listnumber"><li class="listnumber">Select the <strong class="specialbold">Tax </strong>check box.<p class="listcontinue">The value assigned to project default ZP_TAX is set as default in the <strong class="specialbold">Tax % </strong>cell.</p>
+</li><li class="listnumber">If needed, type or update the tax percentage in the <strong class="specialbold">Tax % </strong>cell.</li><li class="listnumber">The tax amount is automatically calculated based on this percentage and displayed in the <strong class="specialbold">Tax Amount </strong>cell. <p class="listcontinue">Vice versa, if you enter a tax amount, the percentage is automatically calculated and displayed.</p>
+<p class="listcontinue">The tax amount is added to the total cost and the result displayed in <strong class="specialbold">Total Cost + Tax</strong>.</p>
+</li><li class="listnumber">You can select the account code to be used for taxes from the <strong class="specialbold">Account Code</strong> list.</li><li class="listnumber">Click <strong class="specialbold">Save</strong>.</li><li class="listnumber">Alternatively, you can click the <strong class="specialbold">Calculate Tax</strong> button at the bottom. <p class="listcontinue">If you click this button, the m_pck_po_custom.execute_cip CIP procedure is executed. This CIP is intended to calculate the tax depending on the values of variable properties such as tax rate and tax flag. The button is only enabled for agreements that are not approved.</p>
+</li></ol><p class="bodytext"><img id="f803309" src="803309.png" alt="" height="13" width="67" vspace="0" hspace="0" align="bottom" border="0"></p>
+<ul class="listbullet2"><li class="listbullet2">The tax is neither included in the total cost value, nor in the project supplier history.</li><li class="listbullet2">If the purchase order (PO) is created based on a notice of commitment (NOC) or a blanket order (BO), the tax amount will be copied from the NOC or the BO if the <strong class="specialbold">Tax </strong>indicator is not set. If <strong class="specialbold">Tax</strong> is selected, the tax amount is calculated as usual based on the tax percentage.</li></ul>
+
+
+<input id="topicId" type="hidden" value="763547" />
+<input id="topicDescription" type="hidden" value="View and edit agreement total costs" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 8/18/2016 3:21:03 AM" />-->
+</body>
+</html>

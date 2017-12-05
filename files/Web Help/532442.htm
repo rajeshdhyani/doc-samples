@@ -1,0 +1,63 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Edit data </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('532441');expand('472853');expand('495092');expand('493543');highlight('532442')}">
+<h5 id="t532442" class="heading5">Edit data</h5>
+<p class="bodytext">This topic explains concepts like editable and non-editable cells, mandatory and non-mandatory cells, and common cell operations. </p>
+<p class="subheading">Editable and non-editable cells</p>
+<p class="bodytext">Cells in the grid can be editable or non-editable. You can enter information only in the cells that are enabled for editing. </p>
+<p class="bodytext"><img id="f532667" src="532667.png" class="ppmalloutputsgraphic" alt="EnteringInformationInACell" height="478" width="992" vspace="0" hspace="0" align="bottom" border="0"></p>
+<table class="tableintopic" width="570" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="45"><p class="bodytext">1</p>
+</td>
+<td style="border:1px solid #010101;" width="525"><p class="bodytext">Editable cells &#8211; Editable cells which allow you to enter data are shown with a white background.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="45"><p class="bodytext">2</p>
+</td>
+<td style="border:1px solid #010101;" width="525"><p class="bodytext">Non-editable cells &#8211; Non-editable cells are shown with a grey background. You cannot enter data in these cells. </p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">You can enter edit mode by double-clicking a cell or by pressing F2. If you enter edit mode, the entire row enters edit mode, and you can click the adjacent cells to enter data. An edit mode indicator <img id="f520018" src="520018.png" class="ppmalloutputsgraphic" alt="" height="28" width="25" vspace="0" hspace="0" align="bottom" border="0"> shows that the row is in edit mode. </p>
+<p class="bodytext"><img id="f803310" src="803310.png" alt="SHARED Tip" height="13" width="41" vspace="0" hspace="0" align="bottom" border="0"> You can press the ESC key to exit edit mode.</p>
+<p class="subheading">Mandatory and optional cells</p>
+<ul class="listbullet"><li class="listbullet">Mandatory cells - Mandatory cells are marked with a red asterisk <img id="f380479" src="380479.png" alt="" height="17" width="16" vspace="0" hspace="0" align="bottom" border="0">. You must enter data in mandatory cells to proceed to the next step to complete a process.</li><li class="listbullet">Optional cells - You can choose to leave the optional cells blank to complete a step in the Portal. Optional cells are not marked with an indicator. </li></ul><p class="subheading">Common cell operations </p>
+<ul class="listbullet"><li class="listbullet">Insert a new record - You can insert a new record using Add <img id="f424169" src="424169.png" alt="AddIcon" height="17" width="16" vspace="0" hspace="0" align="bottom" border="0">. </li><li class="listbullet">Update data in a cell - You can update data in a cell by entering edit mode and modifying the existing data. You must click Save to keep the modified information. </li><li class="listbullet">Delete data in a cell - You can delete the data in a cell by entering edit mode and pressing the Delete key. </li><li class="listbullet">Copy data from a cell - You can copy data from the shortcut menu options available on a cell. Right-click a cell and click Copy or Copy with Header to copy the cell data. <p class="listcontinue"><img id="f803310_1" src="803310.png" alt="SHARED Tip" height="13" width="41" vspace="0" hspace="0" align="bottom" border="0"> Copy with Header copies the cell data along with the header name. </p>
+<p class="listcontinue"><img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> When you copy data from the grid to an Excel sheet, sometime Excel might not recognize the numbers as numbers because of spacing issues in the cells.For example, this problem happens with French settings. In French settings Char(160) is used as default space. However, Excel recognizes Char(32) as default space.  Follow the steps below, if your computer is configured with French settings in Control Panel.</p>
+<ol class="listnumber3"><li class="listnumber3"> Click <strong class="specialbold">Region and Language</strong> from  <strong class="specialbold">Control Panel</strong>. </li><li class="listnumber3">Click <strong class="specialbold">Additional Settings...</strong></li><li class="listnumber3">In the<strong class="specialbold"> Digit grouping symbo</strong>l box, backspace to remove the default space (char(160)) and then press space bar to add empty space (char(32)).</li></ol></li><li class="listbullet">Paste data from a cell - You can paste data into a cell by using the shortcut menu options available on a cell. Right-click a cell and click Paste to paste the copied data. <p class="listcontinue"><img id="f532681" src="532681.png" class="ppmalloutputsgraphic" alt="" height="321" width="231" vspace="0" hspace="0" align="bottom" border="0"></p>
+</li><li class="listbullet">Save - You can save the data on a page by clicking Save. </li></ul><p class="subheading">Select List</p>
+<p class="bodytext">In many places in the application  you will see a Select List option. There are three types of select lists. </p>
+<ul class="listbullet"><li class="listbullet"><strong class="specialbold">Pre-defined select list  </strong><img id="f466262" src="466262.png" class="embeddedolefiletemplate" alt="LOVButton" height="18" width="18" vspace="0" hspace="0" align="bottom" border="0"> - Allows you to pick an option from a pre-defined select list.<p class="listcontinue"><img id="f532696" src="532696.png" class="ppmalloutputsgraphic" alt="" height="267" width="364" vspace="0" hspace="0" align="bottom" border="0"></p>
+<ul class="listbullet2"><li class="listbullet2">You can search for values from the top and pick a value. </li></ul></li><li class="listbullet"><strong class="specialbold">Date picker </strong><img id="f520015" src="520015.png" class="ppmalloutputsgraphic" alt="CalendarIcon" height="27" width="27" vspace="0" hspace="0" align="bottom" border="0"> - Allows you to pick a date. <p class="listcontinue"><img id="f532699" src="532699.png" class="ppmalloutputsgraphic" alt="" height="184" width="240" vspace="0" hspace="0" align="bottom" border="0"></p>
+</li><li class="listbullet"><strong class="specialbold">Drop-down lists: </strong>Contains a list of values depending on the data you are entering. This list appears when you double-click the cell. <p class="listcontinue"><img id="f532979" src="532979.png" class="ppmalloutputsgraphic" alt="" height="152" width="117" vspace="0" hspace="0" align="bottom" border="0"></p>
+</li></ul>
+
+
+<input id="topicId" type="hidden" value="532442" />
+<input id="topicDescription" type="hidden" value="Edit data" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 8/9/2016 8:51:09 AM" />-->
+</body>
+</html>

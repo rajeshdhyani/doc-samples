@@ -1,0 +1,33 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Close notifications </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('532457');expand('472853');expand('495092');expand('493543');highlight('535672')}">
+<h5 id="t535672" class="heading5">Close notifications</h5>
+<p class="bodytext">If you want to switch over to any other task when the errors or warning notifications are still displayed, a confirmation dialog box appears. Click <strong class="specialbold">Save</strong>, <strong class="specialbold">Don't save</strong>, or <strong class="specialbold">Cancel</strong>. </p>
+<p class="bodytext"><img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> Errors and warnings must be resolved before closing the notification ribbon, but Information notifications do not need to be resolved.</p>
+
+
+<input id="topicId" type="hidden" value="535672" />
+<input id="topicDescription" type="hidden" value="Close notifications" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 8/19/2016 8:51:37 AM" />-->
+</body>
+</html>

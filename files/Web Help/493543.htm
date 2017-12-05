@@ -1,0 +1,32 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Welcome to Smart Materials </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {highlight('493543')}">
+<h1 id="t493543" class="heading1">Welcome to Smart Materials</h1>
+<p class="bodytext">Intergraph Smart<sup class="superscript">&reg;</sup> Materials is a material management solution that covers the entire life-cycle of material management. It provides a common collaboration platform and project workbench for all partners in any engineering, procurement, and construction (EPC) project supply chain. </p>
+
+
+<input id="topicId" type="hidden" value="493543" />
+<input id="topicDescription" type="hidden" value="Welcome to Smart Materials" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 5/16/2017 11:10:41 AM" />-->
+</body>
+</html>

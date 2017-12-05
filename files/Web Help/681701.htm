@@ -1,0 +1,41 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Rearrange item shipments by moving them into matching PPLs </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+</head>
+<body  onload="if (isTOCLoaded()) {expand('816722');highlight('859951')}">
+<h2 id="t859951" class="heading2">Rearrange item shipments by moving them into matching PPLs</h2>
+<p class="bodytext"><strong class="specialbold"><a id="h681715" class="expandingblocktemplate" title="What happens when I rearrange items?" href="javascript:toggleBlock('681715')" target="_self"><img id="i681715" class="expandicon" src="arrowright.gif" alt="" border="0">What happens when I rearrange items?</a></strong></p>
+<div id="d681715" class="expandingblock" style="display:none"><p class="bodytext">When you click <strong class="specialbold">Rearrange</strong>, the application checks if the current PPL details and item shipment details (both quantity and delivery details) are same for the selected items. If a mismatch is found, the selected items are moved to another PPL whose details match with the selected item. If the selected items are not part of any PPL, then also the selected items are moved to another PPL whose details match with the selected item.</p>
+</div><p class="bodytext"><strong class="specialbold"><a id="h682464" class="expandingblocktemplate" title="What happens if there is no matching PPL for an item shipment?" href="javascript:toggleBlock('682464')" target="_self"><img id="i682464" class="expandicon" src="arrowright.gif" alt="" border="0">What happens if there is no matching PPL for an item shipment?</a></strong></p>
+<div id="d682464" class="expandingblock" style="display:none"><p class="bodytext">If there is no matching PPL, then a new PPL gets automatically created with the matching properties, and the item shipment gets assigned to that PPL.</p>
+</div><p class="bodytext"><strong class="specialbold"><a id="h755171" class="expandingblocktemplate" title="How do I identify if there is a mismatch between a package item and the container PPL?" href="javascript:toggleBlock('755171')" target="_self"><img id="i755171" class="expandicon" src="arrowright.gif" alt="" border="0">How do I identify if there is a mismatch between a package item and the container PPL?</a></strong></p>
+<div id="d755171" class="expandingblock" style="display:none"><p class="bodytext">You can identify if there is a mismatch by looking at the <strong class="specialbold">Status</strong> column in the <strong class="specialbold">Ident Details</strong> section. The status shows <strong class="specialbold">Mismatch</strong>, if there is a mismatch (delivery details or quantity) between the package item and the container PPL. To find out the exact mismatch, select the item and look at the <strong class="specialbold">Information</strong> section below the data grid. </p>
+</div><ol class="listnumber"><li class="listnumber">Select <strong class="specialbold">Traffic</strong> from the <strong class="specialbold">Tasks</strong> list.</li><li class="listnumber">Select <strong class="specialbold">Agreements</strong> from the list under <strong class="specialbold">Traffic Coordination</strong>.</li><li class="listnumber">Click the agreement number for which you want to rearrange the preliminary packages or item shipments.</li><li class="listnumber">On the <strong class="specialbold">Item Shipments</strong> tab, select the items that you want to rearrange.</li><li class="listnumber">Click <img id="f760303" src="760303.png" alt="Rearrange" height="23" width="23" vspace="0" hspace="0" align="bottom" border="0"> <strong class="specialbold">Rearrange</strong>.<p class="listcontinue"><img id="f803309" src="803309.png" alt="" height="13" width="67" vspace="0" hspace="0" align="bottom" border="0"></p>
+<ul class="listbullet2"><li class="listbullet2">Only the items editable by you are rearranged. The items that are being worked on by the supplier are not rearranged, even if they are selected.</li><li class="listbullet2">The items belonging to a locked package are not rearranged even if they are selected.</li><li class="listbullet2">If you select the items from the <strong class="specialbold">Not Packed Items</strong> section, then all the item shipments are automatically assigned to the matching PPLs.</li></ul><p class="listcontinue"><img id="f803310" src="803310.png" alt="SHARED Tip" height="13" width="41" vspace="0" hspace="0" align="bottom" border="0"> </p>
+<ul class="listbullet2"><li class="listbullet2">If you do not want a preliminary package to be changed during rearrange, select the package and select the<strong class="specialbold"> Locked</strong> check box.</li></ul></li></ol>
+
+
+<input id="topicId" type="hidden" value="859951" />
+<input id="topicDescription" type="hidden" value="Rearrange item shipments by moving them into matching PPLs" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 6/22/2017 12:57:35 AM" />-->
+</body>
+</html>

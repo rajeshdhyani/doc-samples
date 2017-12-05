@@ -1,0 +1,44 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Create a pre-shipment </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+</head>
+<body  onload="if (isTOCLoaded()) {expand('830103');expand('816722');highlight('771207')}">
+<h3 id="t771207" class="heading3">Create a pre-shipment</h3>
+<p class="bodytext"><strong class="specialbold"><a id="h811119" class="expandingblocktemplate" title="Can I have multiple pre-shipments for a package or packing list?" href="javascript:toggleBlock('811119')" target="_self"><img id="i811119" class="expandicon" src="arrowright.gif" alt="" border="0">Can I have multiple pre-shipments for a package or packing list?</a></strong></p>
+<div id="d811119" class="expandingblock" style="display:none"><p class="bodytext">Yes, you can have multiple pre-shipments for a package or packing list.</p>
+</div><p class="bodytext"><strong class="specialbold"><a id="h811120" class="expandingblocktemplate" title="Do the pre-shipments always need to arrive at the departure point of the main shipment?" href="javascript:toggleBlock('811120')" target="_self"><img id="i811120" class="expandicon" src="arrowright.gif" alt="" border="0">Do the pre-shipments always need to arrive at the departure point of the main shipment?</a></strong></p>
+<div id="d811120" class="expandingblock" style="display:none"><p class="bodytext">No, not necessarily. However, if a pre-shipment arrives at a different place, then its packages need to be picked up by other pre-shipments to ultimately deliver them to the departure point of the main shipment. When you create a pre-shipment, you have an option to include packages from other pre-shipments that have not yet reached the departure point of the main shipment.</p>
+<p class="bodytext">Remember, that you need to ensure that all the packages reach the departure point of the main shipment via one or multiple pre-shipments. In case, some packages do not reach the departure point then the pre-shipment dates are ignored by the application and the RMS (Routing Method Schedule) for the corresponding item shipments are not updated with the pre-shipment dates.</p>
+<p class="bodytext"></p>
+<p class="bodytext"></p>
+</div><ol class="listnumber"><li class="listnumber">Select <strong class="specialbold">Traffic</strong> from the Tasks list.</li><li class="listnumber">Click <strong class="specialbold">Shipments</strong>.</li><li class="listnumber">Click the shipment for which you want to create a pre-shipment.</li><li class="listnumber">Click the <strong class="specialbold">Pre-Shipments</strong> tab.</li><li class="listnumber">Click <strong class="specialbold">Create Pre-Shipment </strong><img id="f573547" src="573547.png" alt="create_ppl" height="17" width="16" vspace="0" hspace="0" align="bottom" border="0">.</li><li class="listnumber">(Optional) Select the existing pre-shipments that you want to be included in the new pre-shipment and click <strong class="specialbold">Next.</strong></li><li class="listnumber">Select the packing lists that you want to include in the pre-shipment.<p class="listcontinue"><img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> You can also expand a packing list and select specific packages to include in the pre-shipment.</p>
+</li><li class="listnumber">Click <strong class="specialbold">Next</strong>.</li><li class="listnumber">Select the means of transport from the <strong class="specialbold">Means of Conveyance</strong> box.<p class="listcontinue"><img id="f803309" src="803309.png" alt="" height="13" width="67" vspace="0" hspace="0" align="bottom" border="0"> </p>
+<ul class="listbullet2"><li class="listbullet2">The options that appear in the <strong class="specialbold">Means of Conveyance</strong> box, might vary depending on the packages selected in the step 5.</li><li class="listbullet2">Depending on the means of conveyance selected, you might have to enter additional information on this page. For example, if you select <strong class="specialbold">Truck</strong>, you have to enter the truck number.</li></ul></li><li class="listnumber">Click <strong class="specialbold">Next</strong>.</li><li class="listnumber">On the <strong class="specialbold">Schedule Shipping</strong> page, enter the estimated departure and arrival dates (<strong class="specialbold">ETD</strong> and <strong class="specialbold">ETA</strong>) for each destination. <p class="listcontinue"><img id="f803308_1" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The last row on the <strong class="specialbold">Schedule Shipping</strong> page is read-only.</p>
+</li><li class="listnumber">Select the final unloading point and click <strong class="specialbold">Save</strong>.<p class="listcontinue"><img id="f803311" src="803311.png" alt="" height="13" width="52" vspace="0" hspace="0" align="bottom" border="0"></p>
+<ul class="listbullet2"><li class="listbullet2">You can enter the actual departure and arrival dates (<strong class="specialbold">ATD</strong> and <strong class="specialbold">ATA</strong>) when you know the actual dates.</li><li class="listbullet2">When the pre-shipment needs to be collected from multiple locations, you can change the order of those locations by clicking the <strong class="specialbold">Move Up</strong> and <strong class="specialbold">Move Down </strong>arrows on the <strong class="specialbold">Schedule Shipping </strong>page.</li><li class="listbullet2">You can enter specific details about a destination in the <strong class="specialbold">Precise Location</strong> box.</li><li class="listbullet2">To delete a pre-shipment, select it and click <strong class="specialbold">Delete Pre-Shipment </strong><img id="f672256" src="672256.png" alt="delete_preliminary_package" height="15" width="14" vspace="0" hspace="0" align="bottom" border="0">. However, if the ATD of a pre-shipment is entered, it cannot be deleted. If the ATD is entered for the main shipment (at shipment level or truck/wagon level) then the corresponding pre-shipments cannot be deleted.</li></ul></li></ol>
+
+
+<input id="topicId" type="hidden" value="771207" />
+<input id="topicDescription" type="hidden" value="Create a pre-shipment" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 7/12/2016 3:43:53 AM" />-->
+</body>
+</html>

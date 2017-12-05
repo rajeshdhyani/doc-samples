@@ -1,0 +1,33 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Navigate to tasks </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('472853');expand('495092');expand('493543');highlight('532231')}">
+<h4 id="t532231" class="heading4">Navigate to tasks</h4>
+<p class="bodytext">To navigate to the required tasks, click <strong class="specialbold">Start</strong> that is displayed on each tasks on the dashboard. You can also click the <strong class="specialbold">Tasks</strong> tab on the project bar and select one of the following tasks: </p>
+<ul class="listbullet"><li class="listbullet"><a id="h540924" class="jumptemplate" title="Manage Agreements" href="392854.htm" target="_self">Manage Agreements</a></li><li class="listbullet"><a id="h472851" class="jumptemplate" title="Manage Expediting" href="393251.htm" target="_self">Manage Expediting</a></li><li class="listbullet"><a id="h508468" class="jumptemplate" title="Manage Master Data" href="479982.htm" target="_self">Master Data</a></li><li class="listbullet"><a id="h540925" class="jumptemplate" title="Manage Planning and Progress" href="500941.htm" target="_self">Manage Planning and Progress</a></li><li class="listbullet"><a id="h478761" class="jumptemplate" title="Manage Suppliers" href="478759.htm" target="_self">Manage Suppliers</a></li></ul>
+
+
+<input id="topicId" type="hidden" value="532231" />
+<input id="topicDescription" type="hidden" value="Navigate to tasks" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 2/9/2017 7:05:50 AM" />-->
+</body>
+</html>

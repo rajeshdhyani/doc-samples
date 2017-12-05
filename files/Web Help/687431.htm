@@ -1,0 +1,198 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> View and edit prices </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('675110');expand('392854');highlight('687431')}">
+<h3 id="t687431" class="heading3">View and edit prices</h3>
+<p class="bodytext">The grid cells of the <strong class="specialbold">Prices </strong>section are listed below.</p>
+<p class="bodytext"><img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> You can click the <strong class="specialbold">Prices </strong>tab at the bottom of the screen to view the price information of the selected line item. This tab is read-only.</p>
+<table class="tableintopic" width="604" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-heading">Cell Name</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-heading">Comment</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Unit Price</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">Price of the line item for a quantity of 1. </p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECP_UP.</p>
+<p class="tableinsidelist-bodytext"><img id="f803308_1" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> You can either enter the unit price or the extended price.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Extended Price</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The extended price is calculated depending on the selected price base:</p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Price base = QTY-UNIT: Quantity * Unit Price</li><li class="tablelistbullet">Price base = WEIGHT-Unit: Quantity * Unit Price * Weight.<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECP_EP.</p>
+</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Delta Extended Price</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The extended price for the changed quantity. This value is only of interest if the project default ZP_CODELTA is set to Y.</p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECP_EP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Discount Base</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">From the <strong class="specialbold">Discount Base</strong> list, select the base for the discount calculation, either <strong class="specialbold">Discount %</strong> or <strong class="specialbold">Discount Amount</strong>. </p>
+<ul class="tablelistbullet"><li class="tablelistbullet">Discount %: The discount amount calculates as: quantity*unit price*discount%. </li><li class="tablelistbullet">Discount Amount: The discount percentage calculates as: discount amount/(quantity*unit price) </li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Discount %</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">You can only update the discount percentage if Discount Base is set to <strong class="specialbold">Discount %</strong>, otherwise it is calculated. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Discount Amount</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">You can only update the discount amount if Discount Base is set to <strong class="specialbold">Discount Amount</strong>, otherwise it is calculated. </p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECP_UP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Discounted Price</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The discounted price is calculated as: extended price-discount amount-other costs discount. </p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECP_EP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Delta Discounted Price</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="bodytext">The discounted price for the changed quantity is shown in the Delta Discounted Price cell. </p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECP_EP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Supply Price</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The price to be paid for supply of a quantity of 1. </p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECP_UP.</p>
+<p class="tableinsidelist-bodytext">You can only enter a supply price if you have not entered a unit price for this line item.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Install Price</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The price to be paid for installation of a quantity of 1. </p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECP_UP.</p>
+<p class="tableinsidelist-bodytext">You can only enter an install price if you have not entered a unit price for this line item.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Gross Other Costs</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The sum of all other costs that are attached to the agreement line item, without considering discounts. </p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECP_EP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Other Costs Discount</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The amount of the discount defined on the other cost level and applied to the extended price of the agreement line item. </p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECP_UP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Net Other Costs</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The sum of all other costs that are attached to the agreement line item, including discounts. </p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECP_EP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Alternate/Option Costs</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">Costs that are included in the extended price caused by alternates and options. Only alternates and options for which the <strong class="specialbold">Include </strong>(in price) indicator is selected are taken into account.</p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECP_EP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Net Price</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The sum of the discounted price and the net other costs. </p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECP_EP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Currency</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The <strong class="specialbold">Currency </strong>cell shows the currency applied to the agreement line item costs. When you create a new line item, the currency of the agreement header is copied as default, but it can be changed.</p>
+<p class="tableinsidelist-bodytext">All units assigned to unit type CURRENCY ar.e available for selection.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Price Base</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">Set the price base to Quantity or Weight. If the price base is set to the Weight, the costs will be calculated using the unit weight and the quantity. Otherwise, only the quantity is used for calculation.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Account Code</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">Optionally, click <strong class="specialbold">Account Code </strong><img id="f471290" src="471290.png" alt="LOVButton" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"> and assign an account code from the list to the agreement line item.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Agreement Payment Set</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext"><img id="f803308_2" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> This cell is only available if the agreement payment type is set to <strong class="specialbold">Milestone Progress</strong>,and if <strong class="specialbold">Progress Payment Level</strong> is set to <strong class="specialbold">Line Item</strong>.</p>
+<p class="tableinsidelist-bodytext">Click <strong class="specialbold">Agreement Payment Set</strong> <img id="f471290_1" src="471290.png" alt="LOVButton" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"> and assign a set to the line item.</p>
+<p class="tableinsidelist-bodytext">The payment events of the set are attached to the line item and can be edited on the <strong class="specialbold">Progress Payment Events</strong> tab, opened using the <strong class="specialbold">Manage</strong> link in the <strong class="specialbold">Other Details</strong> cell (see <a id="h833383" class="jumptemplate" title="View and edit progress payment events for a line item" href="833186.htm" target="_self">View and edit progress payment events for a line item</a>).</p>
+<p class="tableinsidelist-bodytext"><img id="f803309" src="803309.png" alt="" height="13" width="67" vspace="0" hspace="0" align="bottom" border="0"></p>
+<ul class="tablelistbullet2"><li class="tablelistbullet2">All line items must have a payment set assigned to approve the agreement.</li><li class="tablelistbullet2">If you change the set by assigning another one, the attached payment events will be replaced with the events from the new set.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Pricing Type</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">Optionally, click <strong class="specialbold">Pricing Type</strong> <img id="f471290_2" src="471290.png" alt="LOVButton" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"> and assign a pricing type to the agreement line item.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Final Approved Amount</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">In case of a Subcontract agreement, you can type the final approved amount in this cell. </p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECP_EP.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Invoice Check</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">To support the invoice handling, you can set the Invoice check :</p>
+<p class="bodytext">2 Way Check - if the invoice quantity cannot be greater than the order quantity + invoice tolerance % (order quantity).</p>
+<p class="bodytext">3 Way Check - if the invoice quantity cannot be greater than the order quantity or the received quantity, whichever is smaller.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext"></p>
+
+
+<input id="topicId" type="hidden" value="687431" />
+<input id="topicDescription" type="hidden" value="View and edit prices" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 1/3/2017 9:33:48 AM" />-->
+</body>
+</html>

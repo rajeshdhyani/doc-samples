@@ -1,0 +1,50 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Define company profile questions </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+</head>
+<body  onload="if (isTOCLoaded()) {expand('837563');expand('479987');expand('479982');highlight('837564')}">
+<h4 id="t837564" class="heading4">Define company profile questions</h4>
+<p class="bodytext">As part of the Portal registration process, the sub-contractors must answer the company profile questionnaire. Questionnaires are defined for each company type.</p>
+<ol class="listnumber"><li class="listnumber">In the <strong class="specialbold">Master Data </strong>navigation panel, select <strong class="specialbold">Procurement </strong>&gt; <strong class="specialbold">Question List</strong>.</li><li class="listnumber">In the <strong class="specialbold">Questions </strong>panel, expand the <strong class="specialbold">Registration Questions </strong>node.</li><li class="listnumber">Select the company type and expand the node.<p class="listcontinue">Alternatively, to define common questions for all company types, expand the <strong class="specialbold">ALL TYPES</strong> node on top of the list.</p>
+<p class="listcontinue"><img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The common questions are displayed in the Portal for all company types under <strong class="specialbold">General Questions</strong>.</p>
+</li><li class="listnumber">Click <strong class="specialbold">Company Profile</strong>.</li><li class="listnumber">Click <strong class="specialbold">Add Question </strong><img id="f380175" src="380175.png" alt="" height="18" width="18" vspace="0" hspace="0" align="bottom" border="0">.</li><li class="listnumber">Optionally, enter a level name in the <strong class="specialbold">Level 2</strong>, <strong class="specialbold">Level 3</strong>, and <strong class="specialbold">Level 4</strong> boxes.<p class="listcontinue"><img id="f803308_1" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The question list can be structured with up to four levels. This defines the hierarchy of the questionnaire as it will appear in the Portal.</p>
+</li><li class="listnumber">Type a unique sequence number in the <strong class="specialbold">Seq </strong>box, to define the display order of the questions in the Portal.</li><li class="listnumber">Type the question in the <strong class="specialbold">Question </strong>box.</li><li class="listnumber">Select an answer type from the list.<p class="listcontinue"><strong class="specialbold"><a id="h838102" class="expandingblocktemplate" title="Which answer type should I select?" href="javascript:toggleBlock('838102')" target="_self"><img id="i838102" class="expandicon" src="arrowright.gif" alt="" border="0">Which answer type should I select?</a></strong></p>
+<div id="d838102" class="expandingblock" style="display:none"><p class="listcontinue">The answer type of a question controls the behavior when inserting the answer in the Portal. The available options are:</p>
+<p class="listcontinue"><strong class="specialbold">Date </strong>- Requires a date value.</p>
+<p class="listcontinue"><strong class="specialbold">Document upload only</strong> - Requires the upload of a document, but the user is not forced to provide an answer. If you select this option, the <strong class="specialbold">Mandatory </strong>check box is cleared and <strong class="specialbold">Document Required </strong>is set to <strong class="specialbold">Yes</strong>.</p>
+<p class="listcontinue"><strong class="specialbold">Free Text</strong> - No restriction.</p>
+<p class="listcontinue"><strong class="specialbold">LOV </strong>- Requires an answer from a select list (list of values - LOV). For this answer type, you must define a select list, using either of the following methods:</p>
+<ul class="listbullet2"><li class="listbullet2">Enter a valid SQL statement on the <strong class="specialbold">Select List</strong> tab. The select statement must retrieve two values (see <a id="h837604" class="jumptemplate" title="Define select lists" href="837596.htm" target="_self">Define select lists</a>).</li><li class="listbullet2">Enter a list of valid values on the <strong class="specialbold">Select List</strong> tab (see <a id="h837604_2" class="jumptemplate" title="Define select lists" href="837596.htm" target="_self">Define select lists</a>).</li><li class="listbullet2">Select a value from the list in the <strong class="specialbold">Mapped to</strong> box. You select a P.20.01 or A.10.23 field to map it to the question. The answer is then filled into this field when the questionnaire is submitted.</li></ul><p class="listcontinue"><strong class="specialbold">Multiple Answers</strong> - Requires the selection of pre-defined answer(s). You define a select list for this question in the same way as described above for the LOV type.   </p>
+<p class="listcontinue"><strong class="specialbold">Number </strong>- Requires a numeric value.</p>
+<p class="listcontinue"><strong class="specialbold">Y/N</strong> - A select list with answers restricted to Y (Yes) and N (No). For questions with Y/N answer type you can define conditional questions (see <a id="h837675" class="jumptemplate" title="Define conditional questions" href="837671.htm" target="_self">Define conditional questions</a>).</p>
+</div></li><li class="listnumber">Optionally, type additional information for this question in the <strong class="specialbold">Information </strong>box. <p class="listcontinue">This information is displayed when you click the <strong class="specialbold">Information </strong>icon in the Portal.</p>
+</li><li class="listnumber">If this question should not be displayed in the Portal, clear the <strong class="specialbold">Active </strong>check box.</li><li class="listnumber">Select the <strong class="specialbold">Mandatory </strong>check box<strong class="specialbold"> </strong>if this question must be answered to submit the questionnaire.</li><li class="listnumber">Select the <strong class="specialbold">Acceptance Required</strong> check box if the acceptance of this question is required to approve the company profile.</li><li class="listnumber">If the acceptance of this question is required, you can specify the criteria for the acceptance of this question in the <strong class="specialbold">Acceptance Criteria</strong> box.</li><li class="listnumber">Select <strong class="specialbold">Yes</strong> from the <strong class="specialbold">Document Required</strong> list if a document must be attached to this question for submitting the questionnaire.<p class="listcontinue">Alternatively, select <strong class="specialbold">Optional </strong>if it's not required to attach documents, but the sub-contractor should have the option to do.</p>
+<p class="listcontinue">Or, select <strong class="specialbold">No</strong> if attaching documents to this question should not be allowed.</p>
+</li><li class="listnumber">Optionally, you can describe what kind of document is expected to be uploaded in the <strong class="specialbold">Document Description </strong>box.</li><li class="listnumber">Optionally, click <strong class="specialbold">Approval Template</strong> <img id="f471290" src="471290.png" alt="LOVButton" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"> and select a template.</li><li class="listnumber">Optionally, select a qualification stage from the list.</li><li class="listnumber">If the answer type is LOV or Multiple Answers, you can map this question to a P.20.01 or A.10.23 field by selecting from the <strong class="specialbold">Mapped To</strong> list. <p class="listcontinue">The answer is then filled into this mapped field when the questionnaire is submitted.</p>
+</li></ol><p class="bodytext"></p>
+
+
+<input id="topicId" type="hidden" value="837564" />
+<input id="topicDescription" type="hidden" value="Define company profile questions" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 5/4/2017 6:59:57 AM" />-->
+</body>
+</html>

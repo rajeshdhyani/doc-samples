@@ -1,0 +1,37 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> View routing method details </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('460211');expand('393251');highlight('460216')}">
+<h3 id="t460216" class="heading3">View routing method details</h3>
+<ol class="listnumber"><li class="listnumber">Select an item shipment.</li><li class="listnumber">Click the <strong class="specialbold">Routing Method </strong>tab.<p class="listcontinue">Here you can view and edit the schedules of the selected item shipment.</p>
+<p class="listcontinue">The destinations are displayed in the <strong class="specialbold">Destination </strong>cell according to the routing method that is assigned to the agreement. The type of date that this destination represents is shown in the <strong class="specialbold">Date Type </strong>cell. The <strong class="specialbold">Delivery Date</strong> is an indicator if this destination represents the contractual delivery date. </p>
+<p class="listcontinue">For each destination of the selected routing method, a planned date, a forecasted date, and an actual date is displayed. The planned date is automatically calculated by the software, you cannot update this value. The<strong class="specialbold"> Forecasted Date </strong>field shows the date for which this event has been forecasted. When item shipments are created, the planned dates are copied as the default values for the forecasted dates. The forecasted dates are updated automatically when entering an actual date for a destination. </p>
+</li><li class="listnumber">Click <strong class="specialbold">Forecasted Date </strong><img id="f424153" src="424153.png" alt="CalendarButton" height="16" width="16" vspace="0" hspace="0" align="bottom" border="0"> and select a date to update a forecasted date.<p class="listcontinue"><img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> Once you have set the forecasted date manually, the modification of the actual date of any destination lying before this destination has no effect on this forecasted date any longer. That is, the automatic calculation stops when it finds a forecasted date that has been set manually. </p>
+</li></ol><p class="bodytext"><img id="f803308_1" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The following events cause the <strong class="specialbold">Actual Date</strong> to be set automatically. </p>
+<ul class="listbullet"><li class="listbullet">If an IRC (inspection release certificate) is assigned to an item shipment, the actual inspection date is copied to the destination that is defined as 'Inspection.' The IRC date is copied to the destination of type 'IRC.'. </li><li class="listbullet">If the date of readiness is set for a release note of an item shipment, this date is copied to the destination marked as 'Hand-Over Point.' </li><li class="listbullet">If the ATD (actual time of departure) date is entered for a means of conveyance (MOC) to which the release note of the item shipment has been assigned and the loading point of which is a destination marked as 'Shipping,' this ATD date is inserted as the actual date for this destination. This also refers to the item shipments on release notes that have been grouped on an MMT (material movement ticket) that is assigned to a MOC. If the loading point does not represent such a destination but a shipping destination has been assigned to the release note on the MOC, the ATD date of the MOC is copied over to that shipping destination. </li><li class="listbullet">If the ATA (actual time of arrival) date is entered for a means of conveyance (MOC) to which the release note of the item shipment has been assigned and the unloading point of which is the delivery designation of the release note / item shipment, this ATA date is inserted as the actual date for the destination marked as 'Traffic Arrival.' Again, this also refers to the item shipments on release notes that have been grouped on an MMT that is assigned to a MOC. If the unloading point does not fulfill this criterion but a shipping destination has been assigned to the release note on the MOC and this shipping destination is the last (or only) shipping destination of the associated routing method, the ATA date of the MOC is copied to the destination of type 'Traffic Arrival.' In both cases, if no destination of type 'Traffic Arrival' exists but a destination of type 'Arrival On Site,' this one will be updated instead. </li><li class="listbullet">If you post a material receiving report (MRR), the actual date of the destination that is of type 'Arrival On Site' is filled. Depending on the setting of project default ZC_UPD_EXP, this is either the date of the material receipt (project default is set to Y) or the posting date of the MRR (project default is set to N). </li></ul><p class="bodytext"></p>
+
+
+<input id="topicId" type="hidden" value="460216" />
+<input id="topicDescription" type="hidden" value="View routing method details" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 6/23/2016 10:05:23 AM" />-->
+</body>
+</html>

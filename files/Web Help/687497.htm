@@ -1,0 +1,78 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> View requisition details </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('675110');expand('392854');highlight('687497')}">
+<h3 id="t687497" class="heading3">View requisition details</h3>
+<p class="bodytext">The requisition details are not displayed for a manual purchase order (MP). The grid cells of the <strong class="specialbold">Requisition Details </strong>section are listed below.</p>
+<table class="tableintopic" width="604" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="121"><p class="tableinsidelist-heading">Cell Name</p>
+</td>
+<td style="border:1px solid #010101;" width="483"><p class="tableinsidelist-heading">Comment</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="121"><p class="tableinsidelist-bodytext">Engineering Requisition</p>
+</td>
+<td style="border:1px solid #010101;" width="483"><p class="tableinsidelist-bodytext">The name of the engineering requisition is displayed in the <strong class="specialbold">Engineering Requisition</strong> cell. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="121"><p class="tableinsidelist-bodytext">Suppl</p>
+</td>
+<td style="border:1px solid #010101;" width="483"><p class="tableinsidelist-bodytext">The requisition supplement is displayed in the <strong class="specialbold">Suppl </strong>cell. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="121"><p class="tableinsidelist-bodytext">RLI Pos</p>
+</td>
+<td style="border:1px solid #010101;" width="483"><p class="tableinsidelist-bodytext">This cell shows the requisition line item (position), it is not displayed when ZR_PROCSEQ is set to Y.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="121"><p class="tableinsidelist-bodytext">RLI Sub</p>
+</td>
+<td style="border:1px solid #010101;" width="483"><p class="tableinsidelist-bodytext">This cell shows the requisition sub line item (sub position), it is not displayed when ZR_PROCSEQ is set to Y.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="121"><p class="tableinsidelist-bodytext">Proc Seq</p>
+</td>
+<td style="border:1px solid #010101;" width="483"><p class="tableinsidelist-bodytext">The <strong class="specialbold">Proc Seq</strong> cell shows the order sequence number (procurement sequence) that will be used for tracking of agreement line items related to the requisition line item throughout several requisition supplements. The cell is not displayed when ZR_PROCSEQ is set to N</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="121"><p class="tableinsidelist-bodytext">Cancel Req</p>
+</td>
+<td style="border:1px solid #010101;" width="483"><p class="tableinsidelist-bodytext">The <strong class="specialbold">Cancel Req</strong> indicator shows whether purchase of associated requisition line items is to be regarded as being cancelled.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext"></p>
+
+
+<input id="topicId" type="hidden" value="687497" />
+<input id="topicDescription" type="hidden" value="View requisition details" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 11/3/2015 8:37:44 AM" />-->
+</body>
+</html>

@@ -1,0 +1,644 @@
+﻿html, body, form {
+    width: 100%;
+    height: 100%;
+    font: normal 10pt segoe ui;
+}
+
+a.jumptemplate:link {
+	color:#175477;
+	text-decoration:none;
+	font-weight:normal;
+	font-style:normal;
+}
+
+a.jumptemplate:visited {
+	color:#668491;
+	text-decoration:none;
+	font-weight:normal;
+	font-style:normal;
+}	
+
+a.jumptemplate:hover {
+	text-decoration:underline;
+}
+
+p { margin:5px; }
+
+#start-panel ul, #start-panel ol { padding-left: 20px; }
+
+.loading
+{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 11px;
+	height: 200px;
+	background-image: url('images/loading_blue.gif') !important; 
+	background-repeat: no-repeat; 
+	background-position: center; 
+	padding-top: 70px;
+}
+
+/*---- HEADER ---------------*/
+div#header {
+    padding: 11px;
+    height: 50px;/*must be in px*/
+ 	background-image: url('images/headerstrip.png') !important;
+ 	text-transform: uppercase;
+    color: #FFFFFF;
+    white-space: nowrap;
+    font-family: Segoe UI;
+	font-size: 10.5pt;
+	font-weight: bold
+}
+
+.header-left { float: left; white-space: nowrap;}
+.header-right { float: right; white-space: nowrap;}
+
+/*----Top Of Page link----*/
+.topOfPage { font-size: 11px; font-family: padding-left: 10px; padding-bottom:5px; cursor:hand; }
+
+/*------ Footer --------*/
+div#footer {
+	background-color: #7F99BE;
+	background-image: url('images/FooterStrip.png') !important;
+	width: 100%;
+	padding:6px;
+}
+
+.footer-left { text-align: left; white-space: nowrap; }
+.footer-right { text-align: right; white-space: nowrap; }
+.footer-center { text-align: center; }
+
+.menu-title{
+    background: #D6E3F2;
+    border-style: solid;
+    border-color:#DAE6F4 #99bbe8 #99bbe8 #DAE6F4;
+    border-width: 1px;
+    margin:-2px -2px 0;
+    color:#15428b;
+    font:bold 10px tahoma,arial,verdana,sans-serif;
+    display:block;
+    padding:3px;
+}
+
+/*---- West panel ------------------ Index & Tree -----------------------*/
+
+/*--- Tree -------------*/
+/* override extjs ext-all.css for tree*/
+
+div.x-tree-node-el {
+    display: table-cell;
+}
+
+.x-tree .x-panel-body { background-color: #FFFFFF; padding: 5px; }
+.x-tree-node .x-tree-selected { background-color: #C1DCFC; font-weight: bold; }
+.x-tree-node .x-tree-node-over { background-color: #DCEEFF; }
+.x-tree-node-collapsed .x-tree-node-icon { background-image: url('images/book_blue.png'); }
+.x-tree-node-expanded .x-tree-node-icon { background-image: url('images/book_open.png'); }
+.x-tree-node-leaf .x-tree-node-icon { background-image:url('images/leaf.gif');  }
+
+
+/*--- Index ---*/
+#index { background-color: #FFFFFF; width: 90%; font-family: Segoe UI; }
+.tableindexlinks td { padding-right: 5px; padding-left: 5px; }
+#index p.indexatoz {
+	font-family: Segoe UI;
+	font-weight:bold;
+	background: #E5E5E5;
+	color: #000000;
+	margin-top: -3px;
+	font-size: 8pt;
+}
+#index a.indexlink { font-style: normal; }
+td.index1 {  font-weight: bold; }
+td.indexlink a:hover { text-decoration: underline !important; }
+
+td.indexheading {
+	font-family: Segoe UI;
+	font-size: 9pt;
+	color: #000000;
+	padding-bottom: 2px;
+	
+}
+/*--- Adding image to west panel vertical bar (when west panel collapsed) ---*/
+.x-layout-collapsed-west {
+	background-image: url(images/toc_collapsed.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+
+/*---- END West panel ------------------ Index & Tree -----------------------*/
+
+/*------- Search ------------------------------------------------------*/
+.searchResultsPanel { background-color: #FFFFFF !important; }
+.searchResults { font-size: 8pt; background-color: #FFFFFF !important; }
+.searchDetails { font-size: 8pt; background-color: #FFFFFF !important; }
+#searchResultsPanel { background-color: #FFFFFF !important; }
+#searchResults { font-size: 8pt; background-color: #FFFFFF !important; }
+#searchDetails { font-size: 8pt; background-color: #FFFFFF !important; }
+#searchResults a:link { color:#175477; font-weight: bold; }
+#searchResults a:visited { color:#668491; font-weight: bold; }
+#searchResults a:hover { text-decoration: underline !important;	}
+
+.searchword1
+{
+	background-color: #FADC96;
+}/*#FFFA96*/
+
+
+/*------------------------------- breadcrumb ---------------------------------------*/
+.breadcrumb:hover { text-decoration: underline !important; }
+
+
+/*---- Topic -------------------------------------------------------*/
+div#start-panel { padding: 10px; }
+.aboveheading { display: none; }
+.belowheading { display: none; }
+
+/*--- panels header (title) ---*/
+.x-panel-header-text { font-weight: normal; display: none}
+
+
+/*--- toolbar ---*/
+.tree-node-toolbar-no-bg-image { background-color: #FFFFFF; background-image: none; }
+.x-toolbar .ytb-text { padding: 0px;}
+.checkbox-text
+{
+	font-family: Segoe UI;
+	font-size: 10pt;
+	margin-left: 3px;
+	position: relative;
+	bottom: 1px;
+}
+  * html .checkbox-text {   
+	margin-left: 0px;   
+} 
+/*--- Icons ---*/
+/*--- main toolbar ---*/
+button.homeIcon { background-image: url(images/home.gif)!important; height: 24px!important; width: 24px!important; }
+button.upIcon { background-image: url(images/up.gif)!important; height: 24px!important; width: 24px!important; }
+button.downIcon { background-image: url(images/down.gif)!important; height: 24px!important; width: 24px!important; }
+
+button.EditIcon { background-image: url(images/edit.png)!important; height: 24px!important; width: 24px!important; }
+button.EditLiveIcon { background-image: url(images/edit_live.png)!important; display: none; height: 24px!important; width: 24px!important; }
+button.emailThisPageIcon { background-image: url(images/email.png)!important; height: 24px!important; width: 24px!important; }
+button.sendFeedbackIcon { background-image: url('images/Com_Feedback_Color24.png') !important; 
+height: 24px!important; width: 24px!important; }
+
+button.printIcon { background-image: url('images/Print_Color24.png') !important; 
+height: 24px!important; width: 24px!important; }
+button.customerSupportIcon { background-image: url('images/customersupport.png') !important; 
+height: 24px!important; width: 24px!important; }
+button.fontResizerIcon { background-image: url('images/Com_FontSize_Color24.png') !important; 
+height: 24px!important; width: 24px!important; }
+button.searchIcon { background-image: url('images/Search_Color24.png') !important; 
+height: 24px!important; width: 24px!important; }
+
+/* navigation buttons */
+#navigateBackIcon{background-image: url(images/BackButton_Control_Normal.png)!important; height: 24px!important; width: 24px!important; cursor: pointer; background-color: transparent!important; background-repeat: no-repeat!important; border:0!important;}
+#navigateForwardIcon{background-image: url(images/FowardButton_Control_Normal.png)!important; height: 24px!important; width: 24px!important; cursor: pointer; background-color: transparent!important; background-repeat: no-repeat!important; border:0!important;}
+
+#navigateBackIcon:hover{background-image: url(images/BackButton_Control_Hovered.png)!important; height: 24px!important; width: 24px!important;}
+#navigateForwardIcon:hover{background-image: url(images/FowardButton_Control_Hovered.png)!important; height: 24px!important; width: 24px!important;}
+
+#navigateBackIcon:focus {background-image: url(images/BackButton_Control_Focused.png)!important; height: 24px!important; width: 24px!important;}
+#navigateForwardIcon:focus {background-image: url(images/FowardButton_Control_Focused.png)!important; height: 24px!important; width: 24px!important;}
+
+#navigateBackIcon:disabled{background-image: url(images/BackButton_Control_Disabled.png)!important; height: 24px!important; width: 24px!important;}
+#navigateForwardIcon:disabled{background-image: url(images/FowardButton_Control_Disabled.png)!important; height: 24px!important; width: 24px!important;}
+
+#navigateBackIcon:active{background-image: url(images/BackButton_Control_Pressed.png)!important; height: 24px!important; width: 24px!important;}
+#navigateForwardIcon:active{background-image: url(images/FowardButton_Control_Pressed.png)!important; height: 24px!important; width: 24px!important;}
+
+/* tree toolbar */
+button.expand { background-image: url(images/expand_all.gif)!important; }
+button.collapse { background-image: url(images/collapse_all.gif)!important; }
+
+/* overwrite Author-it stylesheet.css styles */
+
+.bodytext 
+{	font: 10pt "Segoe UI", Tahoma, verdana, arial, helvetica, sans-serif;
+}
+
+.specialbold { font-family: "Segoe UI", Tahoma, verdana, arial, helvetica, sans-serif; }
+
+.boldunderline { font-family: "Segoe UI", Tahoma, verdana, arial, helvetica, sans-serif; }
+
+
+.heading1
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+	color:  #000000
+}
+
+.heading2
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+	color:  #000000
+}
+
+.heading3
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+	color: #3D73A9
+}
+
+.heading4
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+	color: #3D73A9
+}
+
+.heading5
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+	color: #6898C8
+}
+
+.heading6
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+	color: #6898C8
+}
+
+li.listbullet 
+{        
+	font: 10pt "Segoe UI", arial, helvetica, sans-serif;
+	list-style-image: url('images/Bullet.dib');
+	margin-left: 0pt;
+}
+
+li.listbullet2 
+{        
+	font: 10pt "Segoe UI", arial, helvetica, sans-serif;
+	list-style-image: url('images/Bullet.dib');
+	margin-left: 0pt;
+}
+
+li.listbullet3 
+{        
+	font: 10pt "Segoe UI", arial, helvetica, sans-serif;
+	list-style-image: url('images/Bullet.dib');
+	margin-left: 0pt;
+}
+
+
+li.whatdoyouwanttodolinks
+{
+	font: 10pt "Segoe UI", verdana, arial, helvetica, sans-serif;
+	margin-left: 0pt;
+}
+
+li.listnumber
+{
+	font: 10pt "Segoe UI", verdana, arial, helvetica, sans-serif;
+	margin-left: 0pt;
+}
+
+li.listnumber2
+{
+	font: 10pt "Segoe UI", verdana, arial, helvetica, sans-serif;
+	margin-left: 0pt;
+}
+
+li.listnumber3
+{
+	font: 10pt "Segoe UI", verdana, arial, helvetica, sans-serif;
+	margin-left: 0pt;
+}
+
+
+.subheading
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+	color: #6898C8;
+}
+
+.whatdoyouwanttodoheading 
+{
+	    font-family: "Segoe UI", Tahoma, verdana, arial, helvetica, sans-serif;
+        font-size: 10pt;
+}
+
+.expandingblock 
+{
+        border-style: dotted;
+	border-width: 1px;
+	border-color: #C5D8EO;
+}
+
+.toc 
+{
+	font-family: "Segoe UI", arial, verdana, arial, helvetica, sans-serif;
+}
+
+.listcontinue
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+}
+
+.indent 
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+	margin-left: 15pt;
+}
+
+
+.indent2
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+	margin-left: 28pt;
+}
+
+
+.indent3
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+	margin-left: 40pt;
+
+}
+
+
+.indent4
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+	margin-left: 52pt;
+}
+
+
+li.indentbullet 
+{        
+	font: 10pt "Segoe UI", arial, helvetica, sans-serif;
+	list-style-image: url('images/Bullet.dib');
+	margin-left: 12pt;
+}
+
+
+li.indentnumber 
+{        
+	font: 10pt "Segoe UI", arial, helvetica, sans-serif;
+	margin-left: 12pt;
+}
+
+
+
+li.indentbullet2 
+{        
+	font: 10pt "Segoe UI", arial, helvetica, sans-serif;
+	list-style-image: url('images/Bullet.dib');
+	margin-left: 22pt;
+}
+
+li.indentnumber2 
+{        
+	font: 10pt "Segoe UI", arial, helvetica, sans-serif;
+	margin-left: 22pt;
+}
+
+
+li.indentbullet3 
+{        
+	font: 10pt "Segoe UI", arial, helvetica, sans-serif;
+	list-style-image: url('images/Bullet.dib');
+	margin-left: 34pt;
+}
+
+li.indentnumber3 
+{        
+	font: 10pt "Segoe UI", arial, helvetica, sans-serif;
+	margin-left: 34pt;
+}
+
+
+
+li.indentbullet4 
+{        
+	font: 10pt "Segoe UI", arial, helvetica, sans-serif;
+	list-style-image: url('images/Bullet.dib');
+	margin-left: 46pt;
+}
+
+li.listnumberindent
+{        
+	font: 10pt "Segoe UI", arial, helvetica, sans-serif;
+	margin-left: 12pt;
+}
+
+li.listnumberindent2
+{        
+	font: 10pt "Segoe UI", arial, helvetica, sans-serif;
+	margin-left: 24pt;
+}
+
+.listcontinue2
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+}
+
+.caption 
+{
+        font-family: "Segoe UI", Arial, verdana, arial, helvetica, sans-serif;
+}
+
+.tablebodytext 
+{
+        font-family: "Segoe UI", Arial, verdana, arial, helvetica, sans-serif;
+        margin-left: 5pt;
+
+}
+
+.tableheadingcenter 
+{
+        font-family: "Segoe UI", Arial, verdana, arial, helvetica, sans-serif;
+
+}
+
+
+.tablebodytextcenter 
+{
+        font-family: "Segoe UI", Arial, verdana, arial, helvetica, sans-serif;
+        margin-left: 2pt;
+
+}
+
+
+.tableheadingsmallerfont 
+{
+        font-family: "Segoe UI", Arial, verdana, arial, helvetica, sans-serif;
+
+}
+
+
+.tablebodytextsmallerfont 
+{
+        font-family: "Segoe UI", Arial, verdana, arial, helvetica, sans-serif;
+        margin-left: 2pt;
+
+}
+
+
+.tableinsidelist-bodytext 
+{
+        font-family: "Segoe UI", Arial, verdana, arial, helvetica, sans-serif;
+        margin-left: 5pt;
+
+}
+
+.tableinsidelist-bodytextcenter 
+{
+        font-family: "Segoe UI", Arial, verdana, arial, helvetica, sans-serif;
+
+}
+
+.tableinsidelist-heading
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ 
+ }
+ 
+.tableinsidelist-headingsmallerfont 
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+	
+ }
+
+.tableinsidelist-bodytextsmallerfont 
+{
+        font-family: "Segoe UI", Arial, verdana, arial, helvetica, sans-serif;
+        margin-left: 2pt;
+
+}
+
+.tableinsidelist-headingcenter 
+{
+font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+
+ol.tablelistnumber2smallerfont
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+ 
+
+li.tablelistnumber2smallerfont
+{
+font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+ 
+
+ul.tablelistbullet
+{
+font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+
+
+li.tablelistbullet
+{
+font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+ 
+
+ol.tablelistnumber2
+{
+font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+ 
+
+li.tablelistnumber2
+{
+font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+ 
+
+ul.tablelistbulletsmallerfont 
+{
+font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+
+
+li.tablelistbulletsmallerfont 
+{
+font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+
+
+ol.tablelistnumbersmallerfont
+{
+font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+ 
+
+li.tablelistnumbersmallerfont
+{
+font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+ 
+
+ol.tablelistnumber 
+{
+font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+
+
+li.tablelistnumber 
+{
+font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+
+
+ul.tablelistbullet2 
+{
+font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+
+
+li.tablelistbullet2 
+{
+font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+
+
+ul.tablelistbullet2smallerfont 
+{
+font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+
+
+li.tablelistbullet2smallerfont 
+{
+font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+
+
+.tableheading 
+{
+font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+ }
+
+.systemresponse 
+{
+        font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+}
+               
+.copyrightpageheadings 
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+}
+
+.copyrighttext 
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+}
+
+ol.copyrightalphalist 
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+}
+
+li.copyrightalphalist 
+{
+	font-family: "Segoe UI", verdana, arial, helvetica, sans-serif;
+	margin-left: 0pt;
+}

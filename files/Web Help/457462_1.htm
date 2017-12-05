@@ -1,0 +1,34 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Filter the tree </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('478759');highlight('457462_1')}">
+<h2 id="t457462" class="heading2">Filter the tree</h2>
+<ol class="listnumber"><li class="listnumber">Click <img id="f457467" src="457467.png" class="ppmalloutputsgraphic" alt="" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"> to open the filter dialog box.<p class="listcontinue"><img id="f457468" src="457468.png" class="ppmalloutputsgraphic" alt="" height="492" width="270" vspace="0" hspace="0" align="bottom" border="0"></p>
+</li><li class="listnumber">Select check boxes for the items that should appear in the tree.</li><li class="listnumber">Select an operator from the <strong class="specialbold">Show rows with value that</strong> drop-down list.</li><li class="listnumber">Enter a string in the text field.</li><li class="listnumber">Click <img id="f447922" src="447922.png" class="embeddedolefiletemplate" alt="CaseButton" height="25" width="100" vspace="0" hspace="0" align="bottom" border="0"> to make the filter case sensitive.<p class="listcontinue"><img id="f803310" src="803310.png" alt="SHARED Tip" height="13" width="41" vspace="0" hspace="0" align="bottom" border="0"> To add an additional search criterion, select <strong class="specialbold">And </strong>or <strong class="specialbold">Or </strong>from the next list. If you select <strong class="specialbold">And</strong>, both criteria must match to display a record. If you select <strong class="specialbold">Or</strong>, one of the two criteria must match. Then select an operator from the next drop-down list, and enter a string in the text field.</p>
+</li><li class="listnumber">Click <strong class="specialbold">Filter </strong>to apply the filter.</li></ol>
+
+
+<input id="topicId" type="hidden" value="457462" />
+<input id="topicDescription" type="hidden" value="Filter the tree" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 11/24/2014 11:20:49 AM" />-->
+</body>
+</html>

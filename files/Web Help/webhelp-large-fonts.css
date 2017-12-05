@@ -1,0 +1,364 @@
+﻿/*
+This stylesheet defines font sizes that correspond to "Large".
+*/
+
+.bodytext 
+{	
+	font-size: 13pt;
+}
+
+.heading1
+{
+	font-size: 17pt;
+}
+
+.heading2
+{
+	font-size: 15pt;
+}
+
+.heading3
+{
+	font-size: 14pt;
+}
+
+.heading4
+{
+	font-size: 14pt;
+}
+
+.heading5
+{
+	font-size: 13pt;
+}
+
+.heading6
+{
+	font-size: 13pt;
+}
+
+.subheading
+{
+	font-size: 13pt;
+}
+
+.whatdoyouwanttodoheading 
+{
+	font-size: 14pt;
+}
+
+li.whatdoyouwanttodolinks
+{
+	font-size: 13pt;
+}
+
+.relatedheading 
+{
+	font-size: 14pt;
+}
+
+#index p.indexatoz 
+{
+	font-size: 11pt;
+}
+
+td.index1
+{
+	font-size: 11pt;
+}
+
+td.index2
+{
+	font-size: 11pt;
+}
+
+.toc 
+{
+	font-size: 11pt;
+}
+
+.x-tree-node
+{
+	font-size: 11pt;
+}
+
+.x-panel-header-text {
+	font-size: 17pt;
+}
+
+li.listnumber
+{
+	font-size: 13pt;
+}
+
+li.listbullet 
+{        
+	font-size: 13pt;
+}
+
+li.listbullet2 
+{        
+	font-size: 13pt;
+}
+
+li.listbullet3 
+{        
+	font-size: 13pt;
+}
+
+
+
+.listcontinue
+{
+	font-size: 13pt;
+}
+
+.indent 
+{
+	font-size: 13pt;
+}
+
+
+.indent2
+{
+	font-size: 13pt;
+}
+
+
+.indent3
+{
+	font-size: 13pt;
+}
+
+
+.indent4
+{
+	font-size: 13pt;
+}
+
+
+li.indentbullet 
+{        
+	font-size: 13pt;
+}
+
+li.indentbullet2 
+{        
+font-size: 13pt;
+}
+
+
+li.indentbullet3 
+{        
+font-size: 13pt;
+}
+
+
+li.indentbullet4 
+{        
+font-size: 13pt;
+}
+
+
+.listcontinue2
+{
+	font-size: 13pt;
+}
+
+.caption 
+{
+	font-size: 13pt;
+}
+
+.tablebodytext 
+{
+	font-size: 13pt;
+}
+
+.tableheading 
+{
+	font-size: 13pt; 
+	
+}
+.tableheadingcenter 
+{
+       font-size: 13pt; 
+
+}
+
+
+.tablebodytextcenter 
+{
+       font-size: 13pt; 
+}
+
+
+.tableheadingsmallerfont 
+{
+       font-size: 11pt; 
+
+}
+
+
+.tablebodytextsmallerfont 
+{
+        font-size: 11pt; 
+}
+
+
+.tableinsidelist-bodytext 
+{
+        font-size: 13pt; 
+}
+
+.tableinsidelist-bodytextcenter 
+{
+        font-size: 13pt; 
+
+}
+
+.tableinsidelist-heading
+{
+	font-size: 13pt; 
+ 
+ }
+ 
+.tableinsidelist-headingsmallerfont 
+{
+	font-size: 11pt; 
+	
+ }
+
+.tableinsidelist-bodytextsmallerfont 
+{
+      font-size: 11pt; 
+}
+
+.tableinsidelist-headingcenter 
+{
+	font-size: 13pt;  
+}
+
+ol.tablelistnumber2smallerfont
+{
+	font-size: 11pt; 
+ }
+ 
+
+li.tablelistnumber2smallerfont
+{
+	font-size: 11pt; 
+ }
+ 
+
+ul.tablelistbullet
+{
+	font-size: 13pt; 
+ }
+
+
+li.tablelistbullet
+{
+	font-size: 13pt; 
+ }
+ 
+
+ol.tablelistnumber2
+{
+	font-size: 13pt; 
+ }
+ 
+
+li.tablelistnumber2
+{
+	font-size: 13pt; 
+ }
+ 
+
+ul.tablelistbulletsmallerfont 
+{
+	font-size: 11pt; 
+ }
+
+
+li.tablelistbulletsmallerfont 
+{
+	font-size: 11pt; 
+ }
+
+
+ol.tablelistnumbersmallerfont
+{
+	font-size: 11pt; 
+ }
+ 
+
+li.tablelistnumbersmallerfont
+{
+	font-size: 11pt; 
+ }
+ 
+
+ol.tablelistnumber 
+{
+	font-size: 13pt; 
+ }
+
+
+li.tablelistnumber 
+{
+	font-size: 13pt; 
+ }
+
+
+ul.tablelistbullet2 
+{
+	font-size: 13pt; 
+ }
+
+
+li.tablelistbullet2 
+{
+	font-size: 13pt; 
+ }
+
+
+ul.tablelistbullet2smallerfont 
+{
+	font-size: 11pt; 
+ }
+
+
+li.tablelistbullet2smallerfont 
+{
+	font-size: 11pt; 
+ }
+
+}
+
+.systemresponse 
+{
+        font-size: 13pt;
+}
+
+
+.copyrightpageheadings 
+{
+        font-size: 15pt;
+}
+
+.copyrighttext 
+{
+        font-size: 13pt;
+}
+
+ol.copyrightalphalist 
+{
+        font-size: 13pt;
+}
+
+li.copyrightalphalist 
+{
+        font-size: 13pt;
+}
+

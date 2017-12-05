@@ -1,0 +1,60 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>  </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {highlight('854272')}">
+
+<p class="subheading">Add single users to the approval sequence</p>
+<ol class="listnumber"><li class="listnumber">Click <strong class="specialbold">Add User</strong> <img id="f380175" src="380175.png" alt="" height="18" width="18" vspace="0" hspace="0" align="bottom" border="0">.</li><li class="listnumber">Type a unique sequence number in the <strong class="specialbold">Seq</strong> cell.<p class="listcontinue">The sequence number defines the display order.</p>
+</li><li class="listnumber">Click <strong class="specialbold">User </strong><img id="f471290" src="471290.png" alt="LOVButton" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"> and select a username from the list.<p class="listcontinue">The first name and last name are populated from the selected user.</p>
+</li><li class="listnumber">Optionally, select the user's title from the list in the <strong class="specialbold">Title</strong> cell.</li><li class="listnumber">Optionally, enter the allowed amount for the user.<p class="listcontinue"><img id="f803309" src="803309.png" alt="" height="13" width="67" vspace="0" hspace="0" align="bottom" border="0"></p>
+<ul class="listbullet2"><li class="listbullet2">Only users with the UPDATE ALLOWED AMOUNT privilege can change the allowed amount.</li><li class="listbullet2">The allowed amount is only considered if a document with a monetary value (for example, an agreement) has to be approved.</li><li class="listbullet2">The approval is only possible if the value that has to be approved does not exceed the allowed amount.</li></ul></li><li class="listnumber">Optionally, click <strong class="specialbold">Distribution Category</strong> <img id="f471290_1" src="471290.png" alt="LOVButton" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"> and select a pre-defined distribution list.<p class="listcontinue">The distribution category defines who is to be notified when this user approves.</p>
+</li></ol><p class="subheading">Use a template to add multiple approvers</p>
+<p class="bodytext">Instead of adding single users as described above, you can use pre-defined templates to add multiple users.</p>
+<ol class="listnumber"><li class="listnumber">Click <strong class="specialbold">Add Approval Template</strong> <img id="f700476" src="700476.png" alt="AddPropertySet" height="18" width="18" vspace="0" hspace="0" align="bottom" border="0">.</li><li class="listnumber">Select the template from the list.</li><li class="listnumber">Optionally, clear the check box to exclude this user from being inserted.</li><li class="listnumber">Click <strong class="specialbold">Add</strong>.</li><li class="listnumber">If needed, adjust the sequence in the <strong class="specialbold">Seq </strong>cell.</li><li class="listnumber">Click <strong class="specialbold">Save</strong>.</li></ol><p class="subheading">Define approval prerequisites</p>
+<p class="bodytext">If approval prerequisites are defined for a user, he can only approve after all the other users assigned as prerequisites have approved.</p>
+<ol class="listnumber"><li class="listnumber">Select a user.</li><li class="listnumber">Click the <strong class="specialbold">Prerequisites </strong>tab.</li><li class="listnumber">Click <strong class="specialbold">Add Prerequisite</strong> <img id="f380175_1" src="380175.png" alt="" height="18" width="18" vspace="0" hspace="0" align="bottom" border="0">.</li><li class="listnumber">Click <strong class="specialbold">User </strong><img id="f471290_2" src="471290.png" alt="LOVButton" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"> and select a username from the list.<p class="listcontinue"><img id="f803310" src="803310.png" alt="SHARED Tip" height="13" width="41" vspace="0" hspace="0" align="bottom" border="0"> To remove a user, click <strong class="specialbold">Delete Prerequisite</strong> <img id="f380176" src="380176.png" alt="" height="16" width="16" vspace="0" hspace="0" align="bottom" border="0">.</p>
+</li></ol><p class="subheading">Approval sequence document</p>
+<p class="bodytext">You can assign a document to the approval sequence. For example, assign a report with the details to the approval sequence.</p>
+<ol class="listnumber"><li class="listnumber">Click the <strong class="specialbold">Approval Sequence Document</strong> tab.</li><li class="listnumber">Click <strong class="specialbold">Attach File</strong> <img id="f825206" src="825206.png" alt="AttachFilesIcon" height="18" width="14" vspace="0" hspace="0" align="bottom" border="0">.</li><li class="listnumber">Select a file and click <strong class="specialbold">Open</strong>,</li><li class="listnumber">Click <strong class="specialbold">Save</strong>.</li></ol><p class="bodytext"><img id="f803311" src="803311.png" alt="" height="13" width="52" vspace="0" hspace="0" align="bottom" border="0"></p>
+<ul class="listbullet"><li class="listbullet">Click the filename to open and view the file.</li><li class="listbullet">Select a file and click <strong class="specialbold">Delete File</strong> <img id="f380176_1" src="380176.png" alt="" height="16" width="16" vspace="0" hspace="0" align="bottom" border="0"> to remove the file.</li></ul><p class="subheading">User approval document</p>
+<p class="bodytext">Each approver can assign a document to the approval sequence.</p>
+<ol class="listnumber"><li class="listnumber">Click the <strong class="specialbold">User Approval Document</strong> tab.</li><li class="listnumber">Click <strong class="specialbold">Attach File</strong> <img id="f825206_1" src="825206.png" alt="AttachFilesIcon" height="18" width="14" vspace="0" hspace="0" align="bottom" border="0">.</li><li class="listnumber">Select a file and click <strong class="specialbold">Open</strong>,</li><li class="listnumber">Click <strong class="specialbold">Save</strong>.<p class="listcontinue">The information icon indicates that the approver has attached a document.</p>
+</li></ol><p class="bodytext"><img id="f803311_1" src="803311.png" alt="" height="13" width="52" vspace="0" hspace="0" align="bottom" border="0"></p>
+<ul class="listbullet"><li class="listbullet">Click the filename to open and view the file.</li><li class="listbullet">Select a file and click <strong class="specialbold">Delete File</strong> <img id="f380176_2" src="380176.png" alt="" height="16" width="16" vspace="0" hspace="0" align="bottom" border="0"> to remove the file</li></ul><p class="subheading">Approve or reject</p>
+<ol class="listnumber"><li class="listnumber">To approve, select <strong class="specialbold">Approved</strong>.<p class="listcontinue"><img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> You can only approve if</p>
+<ul class="listbullet2"><li class="listbullet2">you are logged in with the account of the approver, or you have the ENFORCE APPROVAL privilege,</li><li class="listbullet2">and you have the appropriate approval privilege,</li><li class="listbullet2">and the amount to be approvded does not exceed the allowed amount, in case this is defined for you. </li></ul></li><li class="listnumber">Alternatively, select <strong class="specialbold">Rejected</strong>.<p class="listcontinue"><img id="f803308_1" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> You can only reject if</p>
+<ul class="listbullet2"><li class="listbullet2">you are logged in with the account of the approver,</li><li class="listbullet2">and you have the appropriate approval privilege.</li></ul></li><li class="listnumber">Optionally, type a comment in the <strong class="specialbold">Comment </strong>cell.</li><li class="listnumber">Click <strong class="specialbold">Save</strong>.<p class="listcontinue">The date when you approve or reject is displayed in the <strong class="specialbold">Approval/Rejection Date</strong> cell.</p>
+<p class="listcontinue">The next approval sequence user (according to the sequence number) is invited via e-mail to approve or reject the object. The e-mail is only sent if the e-mail address is defined for the user.</p>
+</li></ol><p class="subheading">Enforce the approval</p>
+<p class="bodytext">If you have the ENFORCE APPROVAL privilege granted, you can do the entire approval on behalf of the assigned approvers.</p>
+<ol class="listnumber"><li class="listnumber">Click <strong class="specialbold">Enforce Approval</strong>.</li><li class="listnumber">Click <strong class="specialbold">Yes </strong>to continue.<p class="listcontinue"><img id="f803308_2" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The following information is updated for all approvers:</p>
+<ul class="listbullet2"><li class="listbullet2">The <strong class="specialbold">Approved </strong>check box is selected.</li><li class="listbullet2">The actual date is entered in the <strong class="specialbold">Approval/Rejection Date</strong> box.</li><li class="listbullet2">A comment is entered in the <strong class="specialbold">Comment </strong>box that the approval was enforced by you.</li></ul></li></ol><p class="subheading">Reverse the approval</p>
+<p class="bodytext">To reset a started or completed approval sequence, do the following:</p>
+<ol class="listnumber"><li class="listnumber">Click <strong class="specialbold">Reverse Approval</strong>.</li><li class="listnumber">Type a comment in the <strong class="specialbold">Reason </strong>box.</li><li class="listnumber">Click <strong class="specialbold">Reverse Approval</strong>.<p class="listcontinue"><img id="f803308_3" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> <strong class="specialbold">Approved </strong>or <strong class="specialbold">Rejected </strong>and <strong class="specialbold">Approval/Rejection Date</strong> are cleared for all approvers, and the <strong class="specialbold">Ready for Approval</strong> check box is cleared.</p>
+</li></ol>
+
+
+<input id="topicId" type="hidden" value="854272" />
+<input id="topicDescription" type="hidden" value="" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 5/23/2017 7:36:15 AM" />-->
+</body>
+</html>

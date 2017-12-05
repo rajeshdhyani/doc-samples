@@ -1,0 +1,79 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> View and edit quantities </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('675110');expand('392854');highlight('687430')}">
+<h3 id="t687430" class="heading3">View and edit quantities</h3>
+<p class="bodytext">The grid cells of the <strong class="specialbold">Quantities</strong> section are listed below.</p>
+<p class="bodytext"><img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> You can click the <strong class="specialbold">Quantities </strong>tab at the bottom of the screen to view the quantity information of the selected line item. This tab is read-only.</p>
+<table class="tableintopic" width="604" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-heading">Cell Name</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-heading">Comment</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Quantity</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">Agreement line item quantity. </p>
+<p class="tableinsidelist-bodytext">In case more than one requisition line item is assigned, see <a id="h792256" class="jumptemplate" title="View and edit associated requisition line items" href="792255.htm" target="_self">View and edit associated requisition line items</a>.</p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECPQTY</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Quantity Unit</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">Unit of the quantity. All units defined for the unit type QUANTITY are available for selection.</p>
+<p class="tableinsidelist-bodytext">On a new line item, the unit assigned to project default ZB_UNIT_ID is set as quantity unit, but you can change it.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Last Quantity</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The previous line item quantity, that is, the quantity of the item before a change order (CO) was created. If the agreement is not a CO, 0 (zero) is displayed. </p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECPQTY</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Changed Quantity</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">Difference between Quantity and Last Quantity. </p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECPQTY</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Released Quantity</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The total quantity that was released to procurement for the requisition line items associated with the agreement line item. </p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECPQTY</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext"></p>
+
+
+<input id="topicId" type="hidden" value="687430" />
+<input id="topicDescription" type="hidden" value="View and edit quantities" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 6/23/2016 7:55:42 AM" />-->
+</body>
+</html>

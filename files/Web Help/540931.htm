@@ -1,0 +1,53 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Edit milestone planning </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+</head>
+<body  onload="if (isTOCLoaded()) {expand('500941');highlight('540931')}">
+<h2 id="t540931" class="heading2">Edit milestone planning</h2>
+<p class="bodytext">A milestone is a user defined event with a date that requires tracking. Each milestone is identified by a label and typically has three dates associated with it, a planned date, a forecasted date, and an actual date. The list of milestone labels is generated automatically according to the assigned milestone set, upon creation of a planned item (tag or requisition), regardless of whether it has been created manually or by the MTO.</p>
+<p class="bodytext"><img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> Coming from a supplement plan, you can skip step 1 to 4. </p>
+<ol class="listnumber"><li class="listnumber">Click the <strong class="specialbold">Planning </strong>task on the dashboard, or select <strong class="specialbold">Planning </strong>from the <strong class="specialbold">Tasks </strong>list.</li><li class="listnumber">Select a planning item in the tree.</li><li class="listnumber">Click <strong class="specialbold">Planning </strong>to display the Planning section.</li><li class="listnumber">Select the <strong class="specialbold">Milestones </strong>tab.</li><li class="listnumber">Click <strong class="specialbold">Add Milestone </strong><img id="f380175" src="380175.png" alt="" height="18" width="18" vspace="0" hspace="0" align="bottom" border="0"> to add a new milestone.<p class="listcontinue"><img id="f803308_1" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> This button is only available for supplements of planned requisitions. You can only add milestones that are part of the assigned milestone set. </p>
+</li><li class="listnumber">You can click <strong class="specialbold">Delete Milestone </strong><img id="f380176" src="380176.png" alt="" height="16" width="16" vspace="0" hspace="0" align="bottom" border="0"> to delete the selected milestone.<p class="listcontinue"><img id="f803308_2" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> This button is only available for supplements of planned requisitions.</p>
+</li><li class="listnumber">Click <strong class="specialbold">Save</strong>.</li><li class="listnumber">(Optional), <a id="h549797" class="expandingblocktemplate" title="Edit milestone details" href="javascript:toggleBlock('549797')" target="_self"><img id="i549797" class="expandicon" src="arrowright.gif" alt="" border="0">edit milestone details</a><div id="d549797" class="expandingblock" style="display:none"><p class="listcontinue">The displayed weight factors 1 and 2 are defined for the budgets 1 and 2 of the milestone.</p>
+<p class="listcontinue"><img id="f803308_3" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The weight factors are used to calculate the progress.</p>
+<ol class="listnumber2"><li class="listnumber2">You can enter an external activity in the <strong class="specialbold">External Activity</strong> box.<p class="listcontinue2">The <strong class="specialbold">External Amount</strong> box can be used to link milestone planning data to an external or third party system.</p>
+<p class="listcontinue2"><img id="f803308_4" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> There is no application logic associated with this external float amount within the system. The <strong class="specialbold">External Activity </strong>and <strong class="specialbold">External Amount</strong> values are used to identify those activities that are not a part of the actual milestone set but noted as having an impact on the overall schedule. An example of this is a client requested change that would stop the cycle for an uncertain amount of time and, for later reference, requires a log. </p>
+</li><li class="listnumber2">In the <a id="h549793" class="expandingblocktemplate" title="Two Phase Planning" href="javascript:toggleBlock('549793')" target="_self"><img id="i549793" class="expandicon" src="arrowright.gif" alt="" border="0">Two Phase Planning</a> section, select the <strong class="specialbold">1st Pass</strong> check box if the milestone marks the end of the first phase of planning. <div id="d549793" class="expandingblock" style="display:none"><p class="listcontinue2">With the <strong class="specialbold">1st Pass</strong> and <strong class="specialbold">2nd Pass </strong>check boxes, you can constitute the end of the first and the beginning of the second phase of planning if you want to set up a two-phase planning. If you have selected these check boxes for a milestone set, you must define exactly two dates in the <strong class="specialbold">Planned </strong>box before you select the <strong class="specialbold">Recalculate Planned Dates</strong> option. The first date must be placed on or before the milestone that was marked as the first pass, and the second date must be placed on or after the milestone that was marked as the second pass. The second date must also lie after the first date. </p>
+<p class="listcontinue2">When you click <strong class="specialbold">Recalculate Planned Dates</strong>, the two phases of planning will be executed. Beginning with the first date entered, the days will be calculated up to the milestone marked as the first pass and backward to the first milestone. Then beginning with the second date entered, the days will be calculated backward to the milestone marked as the second pass and forward to the last milestone. The planned days between the first pass and the second pass will not be filled. </p>
+<p class="listcontinue2">If you have already executed the two-phase planning and click <strong class="specialbold">Recalculate Planned Dates</strong>, all calculated planned dates will be deleted except the dates of the first and the second pass, which will be used as starting dates for the new calculation. </p>
+<p class="listcontinue2">This two-phase planning has no effect on the calculation of the forecasted dates. If you calculate the planned dates and the forecasted dates are yet empty, the date of the second pass will be taken as starting date for calculating the forecasted dates.</p>
+</div></li><li class="listnumber2">Alternatively, select the <strong class="specialbold">2nd Pass</strong> check box if the milestone marks the beginning of the second phase of planning.</li></ol></div></li><li class="listnumber">(Optional) Click the <strong class="specialbold">Description </strong>tab to <a id="h549796" class="expandingblocktemplate" title="" href="javascript:toggleBlock('549796')" target="_self"><img id="i549796" class="expandicon" src="arrowright.gif" alt="" border="0">view milestone descriptions</a>.<div id="d549796" class="expandingblock" style="display:none"><p class="listcontinue">The <strong class="specialbold">Description </strong>tab displays the short description and the description of the selected milestone.</p>
+</div></li><li class="listnumber">(Optional) Click the <strong class="specialbold">Comments </strong>tab to <a id="h549798" class="expandingblocktemplate" title="Edit milestone comments" href="javascript:toggleBlock('549798')" target="_self"><img id="i549798" class="expandicon" src="arrowright.gif" alt="" border="0">edit milestone comments</a>.<div id="d549798" class="expandingblock" style="display:none"><p class="listcontinue">On the <strong class="specialbold">Comments </strong>tab, you can add comments to the selected milestone on the planned and forecasted dates.</p>
+<ol class="listnumber2"><li class="listnumber2">Type a comment in the <strong class="specialbold">Comment on Planned Date</strong> box.</li><li class="listnumber2">Type a comment in the <strong class="specialbold">Comment on Forecasted Date</strong> box.</li></ol></div></li></ol><h3 class="relatedheading">See Also</h3>
+<p class="relateditem"><a id="h733346" class="jumptemplate" title="Refresh milestones" href="733318.htm" target="_self">Refresh milestones</a></p>
+<p class="relateditem"><a id="h571542" class="jumptemplate" title="Recalculate planned dates" href="571491.htm" target="_self">Recalculate planned dates</a></p>
+<p class="relateditem"><a id="h571543" class="jumptemplate" title="Recalculate forecasted dates" href="571492.htm" target="_self">Recalculate forecasted dates</a></p>
+<p class="relateditem"><a id="h571545" class="jumptemplate" title="Lock planned or forecasted dates" href="571544.htm" target="_self">Lock planned or forecasted dates</a></p>
+<p class="relateditem">Override derived actual dates</p>
+<p class="relateditem"><a id="h722812" class="jumptemplate" title="Edit detail milestones" href="722811.htm" target="_self">Edit detail milestones</a></p>
+
+
+<input id="topicId" type="hidden" value="540931" />
+<input id="topicDescription" type="hidden" value="Edit milestone planning" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 12/13/2016 10:55:14 AM" />-->
+</body>
+</html>

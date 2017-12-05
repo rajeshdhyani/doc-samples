@@ -1,0 +1,35 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Execute CIPs </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('392854');highlight('650614')}">
+<h2 id="t650614" class="heading2">Execute CIPs</h2>
+<p class="bodytext">You can run customer installed procedures (CIPs) to apply any company-specific data verification or update to the selected agreement.</p>
+<ol class="listnumber"><li class="listnumber">Click the <strong class="specialbold">Agreements </strong>task on the dashboard. </li><li class="listnumber">Select an agreement.</li><li class="listnumber">Click the <strong class="specialbold">Execute CIP </strong>button.<p class="listcontinue">The m_pck_po_custom.check_po_number CIP is executed first, and then m_pck_po_custom.exec_general_cip.</p>
+<p class="listcontinue"><img id="f803309" src="803309.png" alt="" height="13" width="67" vspace="0" hspace="0" align="bottom" border="0"> The <strong class="specialbold">Execute CIP </strong>button is only enabled if</p>
+<ul class="listbullet2"><li class="listbullet2">the supplement is the highest supplement of the agreement,</li><li class="listbullet2"><strong class="specialbold">Ready for Approval</strong> is not set,</li><li class="listbullet2">the approval sequence is not started,</li><li class="listbullet2">the supplement is not approved,</li><li class="listbullet2">the<strong class="specialbold"> ERP Managed </strong>check box is selected and you have the PROCESS ERP AGREEMENTS/REQS privilege.</li></ul></li></ol>
+
+
+<input id="topicId" type="hidden" value="650614" />
+<input id="topicDescription" type="hidden" value="Execute CIPs" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 11/9/2016 5:18:53 AM" />-->
+</body>
+</html>

@@ -1,0 +1,35 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Split a line item </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('675110');expand('392854');highlight('784352')}">
+<h3 id="t784352" class="heading3">Split a line item</h3>
+<p class="bodytext">You can split a line item into multiple lines, for example, if the material has different delivery dates or delivery places to be tracked separately.</p>
+<p class="bodytext"><img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The <strong class="specialbold">Split Line</strong> option is available if </p>
+<ul class="listbullet"><li class="listbullet">the agreement is not a BO (blanket order),</li><li class="listbullet">the position is not a master tag,</li><li class="listbullet">and master and detail tags have not been created on the item shipment level.</li></ul><ol class="listnumber"><li class="listnumber">Select the line item you want to split.</li><li class="listnumber">Click <strong class="specialbold">Split Position</strong> <img id="f467425" src="467425.png" alt="SplitLineItemButton" height="18" width="24" vspace="0" hspace="0" align="bottom" border="0"> and select <strong class="specialbold">Split Line</strong>.</li><li class="listnumber">Enter the number of splits you want to create.</li><li class="listnumber">Click <strong class="specialbold">Split</strong>.<p class="listcontinue"><img id="f803309" src="803309.png" alt="" height="13" width="67" vspace="0" hspace="0" align="bottom" border="0"></p>
+<ul class="listbullet2"><li class="listbullet2">an identical copy of the current line item is created including all subsequent data as cross references to requisition line items, attached attributes, other costs, documents, VDRs, and milestones. With respect to the item shipments, only the first one is copied to the new line item.</li><li class="listbullet2">The quantity of the new line item(s) is set to 0 (zero), and the quantity of the current line item remains unchanged. It is up to you to adjust the quantities accordingly.</li><li class="listbullet2">An item shipment is created for each new line item.</li></ul></li></ol>
+
+
+<input id="topicId" type="hidden" value="784352" />
+<input id="topicDescription" type="hidden" value="Split a line item" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 4/4/2016 5:19:29 AM" />-->
+</body>
+</html>

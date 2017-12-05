@@ -1,0 +1,47 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Edit agreement other costs </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('763545');expand('392854');highlight('773092')}">
+<h3 id="t773092" class="heading3">Edit agreement other costs</h3>
+<p class="bodytext">Each agreement has additional costs associated with it, such as freight or special fees, that are not necessarily associated with the material purchased.</p>
+<p class="bodytext">When you create a change order (CO), the other costs are not copied from previous supplement. The total costs of a CO are calculated considering all other costs assigned to the original agreement and all previous COs. </p>
+<p class="bodytext">It depends on the setting of project default ZP_SUM_OC if other costs are displayed per agreement supplement or summed up. The setting only influences the data display, it does not have an impact on the way the data is stored in the database.  </p>
+<p class="bodytext">If ZP_SUM_OC is set to N (default), one record is shown for each supplement where an other cost was added or changed. If you want to change the other cost on a change order, do not enter the new value but only the difference based on the previous value. For example, to update an other cost from 50 to 80 you would enter 30.   </p>
+<p class="bodytext">If ZP_SUM_OC is set to Y, the total for each other cost over all supplements up to the current supplement is shown. If you want to change the other cost on a change order, enter the new value. You cannot delete an other cost that was created on a previous supplement. In this case, you must enter 0 (zero) in <strong class="specialbold">Other Cost % </strong>or <strong class="specialbold">Cost Value</strong>.  </p>
+<p class="bodytext">To add a new other cost, proceed as follows.</p>
+<ol class="listnumber"><li class="listnumber">Click <strong class="specialbold">Add Other Cost</strong> <img id="f380175" src="380175.png" alt="" height="18" width="18" vspace="0" hspace="0" align="bottom" border="0">.</li><li class="listnumber">Click <strong class="specialbold">Other Cost</strong> <img id="f471290" src="471290.png" alt="LOVButton" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"> and select a value.<p class="listcontinue">The <strong class="specialbold">Suppl </strong>field displays the agreement supplement for which the other cost has been created. </p>
+</li><li class="listnumber">Optionally, click <strong class="specialbold">Account Code</strong> <img id="f471290_1" src="471290.png" alt="LOVButton" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"> and select an account code.<p class="listcontinue">The <strong class="specialbold">Eval Cost</strong> indicator shows whether this other cost is an evaluation cost. It cannot be updated.</p>
+</li><li class="listnumber">Clear the <strong class="specialbold">PP Cost</strong> check box if this other cost should not be included in the <strong class="specialbold">Total Material Cost </strong>value on the <strong class="specialbold">Progress Payment Events</strong> screen.</li><li class="listnumber">Select <strong class="specialbold">Discountable </strong>if this other cost is discountable.<p class="listcontinue"><img id="f803309" src="803309.png" alt="" height="13" width="67" vspace="0" hspace="0" align="bottom" border="0"></p>
+<ul class="listbullet2"><li class="listbullet2">If a discount is assigned to the agreement and this indicator is selected, the discount is also applied to this other cost.</li><li class="listbullet2">This indicator can only be set after a discount has been assigned to the agreement and the discount base is set to &#8216;Discount %', or if an other cost has been defined as discount. Additionally, <strong class="specialbold">Discountable </strong>can only be selected if you haven't entered a negative other cost % value.</li></ul></li><li class="listnumber">Type a percentage value in the <strong class="specialbold">Other Cost % </strong>box if a percentage surcharge shall be added to the agreement costs.<p class="listcontinue"><img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> To define a discount, enter a negative value. You can only define discounts under other costs, if project default ZP_OC_DISC is set to Y (default), and if no Discount % or Discount Amount value has been entered on agreement header.</p>
+</li><li class="listnumber">Alternatively, type a fix value in the <strong class="specialbold">Cost Value </strong>box.<p class="listcontinue"><img id="f803309_1" src="803309.png" alt="" height="13" width="67" vspace="0" hspace="0" align="bottom" border="0"></p>
+<ul class="listbullet2"><li class="listbullet2">You can only enter a value if other cost % is 0 (zero).</li><li class="listbullet2">You can only enter negative values if project default ZP_NEG_OC is set to Y.</li><li class="listbullet2">The number of decimal places is controlled by the setting of ZP_DECP_UP.</li></ul></li><li class="listnumber">The currency of the other cost is copied from the agreement, but it can be updated in the <strong class="specialbold">Currency </strong>box.<p class="listcontinue">In case of a CO (change order), the cost difference between the previous and actual agreement supplement is displayed in the <strong class="specialbold">Changed Cost Value </strong>box, and the total cost value across all agreement supplements is shown in the <strong class="specialbold">Total Cost Value </strong>box.</p>
+<p class="listcontinue"><img id="f803308_1" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The number of decimal places in <strong class="specialbold">Changed Cost Value </strong>and <strong class="specialbold">Total Cost Value</strong> is controlled by the setting of ZP_DECP_UP.</p>
+</li><li class="listnumber">Select the <strong class="specialbold">Taxable </strong>check box if the other cost is taxable.<p class="listcontinue"><img id="f803308_2" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The setting of this check box is only of interest if project default ZP_TAX is set. If project default ZP_DEF_TAX is set to Y, <strong class="specialbold">Taxable </strong>is selected when you add a new other cost.</p>
+</li><li class="listnumber">Select the <strong class="specialbold">Prog Pay</strong> check box if this other cost should be available when invoicing against progress payments.</li><li class="listnumber">If needed, update the pre-defined other cost description in the <strong class="specialbold">Short Description</strong> and <strong class="specialbold">Description </strong>boxes at the bottom.</li><li class="listnumber">Click <strong class="specialbold">Save</strong>.</li></ol><p class="bodytext"><img id="f803310" src="803310.png" alt="SHARED Tip" height="13" width="41" vspace="0" hspace="0" align="bottom" border="0"> To remove an other cost, select the record and click <strong class="specialbold">Remove Other Cost </strong><img id="f380176" src="380176.png" alt="" height="16" width="16" vspace="0" hspace="0" align="bottom" border="0">.</p>
+<p class="bodytext">How to add properties to other cost, see <a id="h774879" class="jumptemplate" title="Assign and edit other cost properties" href="774878.htm" target="_self">Assign and edit other cost properties</a>.</p>
+
+
+<input id="topicId" type="hidden" value="773092" />
+<input id="topicDescription" type="hidden" value="Edit agreement other costs" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 2/15/2016 9:44:10 AM" />-->
+</body>
+</html>

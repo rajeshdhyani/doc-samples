@@ -1,0 +1,361 @@
+﻿/*
+This stylesheet defines font sizes that correspond to "Medium".
+*/
+
+.bodytext 
+{	
+	font-size: 10pt;
+}
+
+.heading1
+{
+	font-size: 14pt;
+}
+
+.heading2
+{
+	font-size: 12pt;
+}
+
+.heading3
+{
+	font-size: 11pt;
+}
+
+.heading4
+{
+	font-size: 11pt;
+}
+
+.heading5
+{
+	font-size: 10pt;
+}
+
+.heading6
+{
+	font-size: 10pt;
+}
+
+.subheading
+{
+	font-size: 10pt;
+}
+
+.whatdoyouwanttodoheading 
+{
+	font-size: 11pt;
+}
+
+li.whatdoyouwanttodolinks
+{
+	font-size: 10pt;
+}
+
+.relatedheading 
+{
+	font-size: 11pt;
+}
+
+#index p.indexatoz 
+{
+	font-size: 8pt;
+}
+
+td.index1
+{
+	font-size: 8pt;
+}
+
+td.index2
+{
+	font-size: 8pt;
+}
+
+.toc 
+{
+	font-size: 10pt;
+}
+
+.x-tree-node
+{
+	font-size: 10pt;
+}
+
+.x-panel-header-text {
+	font-size: 14pt;
+}
+
+li.listnumber
+{
+	font-size: 10pt;
+}
+
+li.listbullet 
+{        
+	font-size: 10pt;
+}
+
+li.listbullet2 
+{        
+	font-size: 10pt;
+}
+
+li.listbullet3 
+{        
+	font-size: 10pt;
+}
+
+
+.listcontinue
+{
+	font-size: 10pt;
+}
+
+.indent 
+{
+	font-size: 10pt;
+}
+
+
+.indent2
+{
+	font-size: 10pt;
+}
+
+
+.indent3
+{
+	font-size: 10pt;
+}
+
+
+.indent4
+{
+	font-size: 10pt;
+}
+
+
+li.indentbullet 
+{        
+	font-size: 10pt;
+}
+
+li.indentbullet2 
+{        
+font-size: 10pt;
+}
+
+
+.indentbullet3 
+{        
+font-size: 10pt;
+}
+
+
+.indentbullet4 
+{        
+font-size: 10pt;
+}
+
+
+.listcontinue2
+{
+font-size: 10pt;
+}
+
+.caption 
+{
+	font-size: 10pt;
+}
+
+.tablebodytext 
+{
+	font-size: 10pt;
+}
+
+.tableheading 
+{
+	font-size: 10pt; 
+}
+
+.tableheadingcenter 
+{
+       font-size: 10pt; 
+
+}
+
+
+.tablebodytextcenter 
+{
+       font-size: 10pt; 
+}
+
+
+.tableheadingsmallerfont 
+{
+       font-size: 8pt; 
+
+}
+
+
+.tablebodytextsmallerfont 
+{
+        font-size: 8pt; 
+}
+
+
+.tableinsidelist-bodytext 
+{
+        font-size: 10pt; 
+}
+
+.tableinsidelist-bodytextcenter 
+{
+        font-size: 10pt; 
+
+}
+
+.tableinsidelist-heading
+{
+	font-size: 10pt; 
+ 
+ }
+ 
+.tableinsidelist-headingsmallerfont 
+{
+	font-size: 8pt; 
+	
+ }
+
+.tableinsidelist-bodytextsmallerfont 
+{
+      font-size: 8pt; 
+}
+
+.tableinsidelist-headingcenter 
+{
+	font-size: 10pt;  
+}
+
+ol.tablelistnumber2smallerfont
+{
+	font-size: 8pt; 
+ }
+ 
+
+li.tablelistnumber2smallerfont
+{
+	font-size: 8pt; 
+ }
+ 
+
+ul.tablelistbullet
+{
+	font-size: 10pt; 
+ }
+
+
+li.tablelistbullet
+{
+	font-size: 10pt; 
+ }
+ 
+
+ol.tablelistnumber2
+{
+	font-size: 10pt; 
+ }
+ 
+
+li.tablelistnumber2
+{
+	font-size: 10pt; 
+ }
+ 
+
+ul.tablelistbulletsmallerfont 
+{
+	font-size: 8pt; 
+ }
+
+
+li.tablelistbulletsmallerfont 
+{
+	font-size: 8pt; 
+ }
+
+
+ol.tablelistnumbersmallerfont
+{
+	font-size: 8pt; 
+ }
+ 
+
+li.tablelistnumbersmallerfont
+{
+	font-size: 8pt; 
+ }
+ 
+
+ol.tablelistnumber 
+{
+	font-size: 10pt; 
+ }
+
+
+li.tablelistnumber 
+{
+	font-size: 10pt; 
+ }
+
+
+ul.tablelistbullet2 
+{
+	font-size: 10pt; 
+ }
+
+
+li.tablelistbullet2 
+{
+	font-size: 10pt; 
+ }
+
+
+ul.tablelistbullet2smallerfont 
+{
+	font-size: 8pt; 
+ }
+
+
+li.tablelistbullet2smallerfont 
+{
+	font-size: 8pt; 
+ }
+
+
+.systemresponse 
+{
+        font-size: 10pt;
+}
+
+.copyrightpageheadings 
+{
+        font-size: 12pt;
+}
+
+.copyrighttext 
+{
+        font-size: 10pt;
+}
+
+ol.copyrightalphalist 
+{
+        font-size: 10pt;
+}
+
+li.copyrightalphalist 
+{
+        font-size: 10pt;
+}
+

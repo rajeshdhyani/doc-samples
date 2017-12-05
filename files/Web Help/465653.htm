@@ -1,0 +1,40 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> View the agreement summary box </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('392854');highlight('465653')}">
+<h2 id="t465653" class="heading2">View the agreement summary box</h2>
+<ol class="listnumber"><li class="listnumber">Click the <strong class="specialbold">Agreements </strong>task on the dashboard. </li><li class="listnumber">Click an agreement number.</li></ol><p class="bodytext">The highest supplement of the selected agreement appears by default. To view another supplement, select this supplement from the <strong class="specialbold">View Supplement</strong> drop-down list. </p>
+<p class="bodytext"><img id="f668296" src="668296.png" alt="AgreementViewSupplement" height="114" width="1081" vspace="0" hspace="0" align="bottom" border="0"></p>
+<p class="bodytext">The <strong class="specialbold">No of Line Items </strong>field shows the number of line items of the selected agreement supplement.</p>
+<p class="bodytext">The <strong class="specialbold">Total Price</strong> field shows the total price of the selected agreement supplement with its currency, calculated as sum of all line item's extended prices and other costs, plus agreement other costs, under consideration of any agreed discounts.</p>
+<p class="bodytext"><img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> -1 without a currency indicates a missing unit to unit conversion. Specify the conversion factor to display the total price. </p>
+<p class="bodytext">The <strong class="specialbold">Agreement Status</strong> field shows the status of the selected agreement supplement. The available statuses are:</p>
+<ul class="listbullet"><li class="listbullet">Closed - the agreement is closed</li><li class="listbullet">Acknowledged - the agreement is acknowledged by expediting</li><li class="listbullet">Issued - the agreement is issued </li><li class="listbullet">Approved - the agreement is approved</li><li class="listbullet">Pending Approval - the agreement is not approved, but <strong class="specialbold">Ready for Approval </strong>is selected and an approval sequence is assigned to the agreement</li><li class="listbullet">Ready for approval - the agreement is ready for approval, but an approval sequence is not assigned to the agreement</li><li class="listbullet">TE Passed - the agreement line items passed the technical evaluation</li><li class="listbullet">Open &#8211; a status has not yet been set</li><li class="listbullet">Delayed - the agreement is not approved and the (agreement creation date - current date) is greater than 14 days</li></ul><p class="bodytext"><img id="f803308_1" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The CIP m_pck_po_custom.get_suppl_status retrieves the agreement status information. </p>
+<p class="bodytext">The delivery status of the agreement is displayed in the <strong class="specialbold">Delivery Status</strong> field for purchase orders, notices of commitment, field orders, rental orders, blanket order releases, and notices to proceed (for materials). The available statuses are:</p>
+<ul class="listbullet"><li class="listbullet">Received - The materials that were ordered with this agreement have been received on site. This status is not available for a subcontract.</li><li class="listbullet">Shipped - The materials that were ordered with this agreement have been shipped. This status is not available for a subcontract.</li><li class="listbullet">- - None of the aforementioned conditions is met. </li></ul><p class="bodytext"><img id="f803308_2" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The CIP m_pck_po_custom.get_suppl_delv_status retrieves the agreement delivery status information.</p>
+
+
+<input id="topicId" type="hidden" value="465653" />
+<input id="topicDescription" type="hidden" value="View the agreement summary box" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 11/9/2016 4:48:40 AM" />-->
+</body>
+</html>

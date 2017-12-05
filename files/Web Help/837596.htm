@@ -1,0 +1,35 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Define select lists </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('837563');expand('479987');expand('479982');highlight('837596')}">
+<h4 id="t837596" class="heading4">Define select lists</h4>
+<p class="bodytext">If the answer type of the question is LOV or Multiple Answers, and the question is not mapped to a screen field, you must define a select list.</p>
+<ol class="listnumber"><li class="listnumber">Click the question.</li><li class="listnumber">Click the <strong class="specialbold">Select List</strong> tab.</li><li class="listnumber">To define manual select list entries, click <strong class="specialbold">Manual Entries</strong>, and do the following:<ol class="listnumber2"><li class="listnumber2">Click <strong class="specialbold">Add Value </strong><img id="f380175" src="380175.png" alt="" height="18" width="18" vspace="0" hspace="0" align="bottom" border="0">.</li><li class="listnumber2">Type a value in the <strong class="specialbold">Value </strong>box.</li><li class="listnumber2">Optionally, type a description in the <strong class="specialbold">Short Description</strong> box.</li><li class="listnumber2">To add more values, repeat the previous steps.</li><li class="listnumber2">Click <strong class="specialbold">Save</strong>.</li></ol></li><li class="listnumber">To define a SQL statement to generate the select list, click <strong class="specialbold">SQL Statement</strong> and do the following:<ol class="listnumber2"><li class="listnumber2">Type the statement in the <strong class="specialbold">Select List Statement</strong> box.</li><li class="listnumber2">Click <strong class="specialbold">Save</strong>.<p class="listcontinue2">The software checks if the entered SQL statement is valid.</p>
+<p class="listcontinue2"><img id="f803309" src="803309.png" alt="" height="13" width="67" vspace="0" hspace="0" align="bottom" border="0"></p>
+<ul class="listbullet3"><li class="listbullet3">The select statement must return exactly two values per record.</li><li class="listbullet3">Do not add a semicolon at the end.</li></ul></li></ol></li></ol>
+
+
+<input id="topicId" type="hidden" value="837596" />
+<input id="topicDescription" type="hidden" value="Define select lists" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 5/2/2017 11:19:15 AM" />-->
+</body>
+</html>

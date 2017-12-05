@@ -1,0 +1,35 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Create a package </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('672293');expand('816722');highlight('830285')}">
+<h3 id="t830285" class="heading3">Create a package</h3>
+<ol class="listnumber"><li class="listnumber">Navigate to the required packing list.</li><li class="listnumber">Click <strong class="specialbold">Add Package</strong> <img id="f573543" src="573543.png" alt="create_preliminary_package" height="22" width="23" vspace="0" hspace="0" align="bottom" border="0">. </li><li class="listnumber">Type the package number in the <strong class="specialbold">Package Number</strong> box.</li><li class="listnumber">Type or select the package type In the <strong class="specialbold">Type</strong> box.</li><li class="listnumber">Type the number of packages you want to create, in the <strong class="specialbold">Quantity</strong> box.<p class="listcontinue"><img id="f803310" src="803310.png" alt="SHARED Tip" height="13" width="41" vspace="0" hspace="0" align="bottom" border="0"> Select the <strong class="specialbold">Lot Package</strong> check box, if the package might have more quantities of some items later. Mention such items in the <strong class="specialbold">Description</strong> box. Lot packages are not considered for HLO calculation and their dimensions (X,Y,Z) are automatically set to zero.</p>
+</li><li class="listnumber">If required, type a short description of the package, in the <strong class="specialbold">Short Description</strong> box.</li><li class="listnumber">If required, type a description of the package, in the <strong class="specialbold">Description</strong> box.</li><li class="listnumber">If required, type the country of the package's origin in the <strong class="specialbold">Country of Origin</strong> box.</li><li class="listnumber">Enter the volume of the package. You can provide the volume in one of the following ways:<ul class="listbullet2"><li class="listbullet2">Type the package dimensions in the <strong class="specialbold">Dimensions</strong> boxes. The volume is automatically calculated based on the dimension values.</li><li class="listbullet2">Type the package volume in the <strong class="specialbold">Volume</strong> box.<p class="listcontinue2"> <img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The <strong class="specialbold">Volume</strong> box is only editable when all the dimension values are zero.</p>
+</li></ul></li><li class="listnumber">Type the gross weight of the package in the <strong class="specialbold">Gross Weight</strong> box. </li><li class="listnumber">If required, type the net weight of the package in the <strong class="specialbold">Net Weight</strong> box.</li><li class="listnumber">Select the appropriate weight unit from the <strong class="specialbold">Weight Unit</strong> list.</li><li class="listnumber">If required, enter the site storage code of the package in the <strong class="specialbold">Site Storage Code</strong> box.</li><li class="listnumber">If required, select the appropriate tier number in the <strong class="specialbold">Stackable Tier</strong> box.</li><li class="listnumber">If required, enter any shipping related instruction for this package in the <strong class="specialbold">Shipping Comment</strong> box. <p class="listcontinue"><img id="f803309" src="803309.png" alt="" height="13" width="67" vspace="0" hspace="0" align="bottom" border="0"> </p>
+<ul class="listbullet2"><li class="listbullet2">The <strong class="specialbold">Total Freight Ton</strong> value is automatically calculated based on the <strong class="specialbold">Total Volume</strong> and <strong class="specialbold">Total</strong> <strong class="specialbold">Gross Weight</strong> value. </li><li class="listbullet2">You can also create a package by selecting an existing package and clicking <strong class="specialbold">Duplicate Package</strong><img id="f653488" src="653488.png" alt="duplicate_package" height="22" width="22" vspace="0" hspace="0" align="bottom" border="0">. That creates a new package containing the same information as the selected package. However, the package items are not copied when you duplicate a package.</li><li class="listbullet2">The list of units linked to the unit type PKG_WEIGHT are used to assign weight units to packages or preliminary packages. However, only those units for which unit-to-unit conversion factors are set in A.10.12 are displayed (to the suppliers) in the <strong class="specialbold">Weight Unit</strong> list.</li><li class="listbullet2">The list of units linked to the unit type DIMENSION are available in the <strong class="specialbold">Dimension Unit</strong> list for the suppliers to assign dimension units to packages or preliminary packages.  You should assign units only from the unit groups - <strong class="specialbold">LENGTH</strong>, <strong class="specialbold">QUANTITY</strong>, and <strong class="specialbold">DIMENSION</strong> to the <strong class="specialbold">DIMENSION</strong> unit type. If the <strong class="specialbold">DIMENSION</strong> unit type is not available, you can create it in A10.12 screen. </li></ul></li></ol>
+
+
+<input id="topicId" type="hidden" value="830285" />
+<input id="topicDescription" type="hidden" value="Create a package" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 6/27/2017 5:27:39 AM" />-->
+</body>
+</html>

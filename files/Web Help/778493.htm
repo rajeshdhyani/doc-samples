@@ -1,0 +1,72 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Shipment Statuses </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('830103');expand('816722');highlight('827133')}">
+<h3 id="t827133" class="heading3">Shipment Statuses</h3>
+<p class="bodytext"></p>
+<table class="tableintopic" width="681" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="340"><p class="tableheadingcenter">Status</p>
+</td>
+<td style="border:1px solid #010101;" width="340"><p class="tableheadingcenter">Description</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="340"><p class="tablebodytext">In Shipment (FF)</p>
+</td>
+<td style="border:1px solid #010101;" width="340"><p class="tablebodytext">The freight forwarder is working on the shipment and the traffic coordinator has to take ownership of the shipment in order to edit it. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="340"><p class="tablebodytext">In Shipment (TC)</p>
+</td>
+<td style="border:1px solid #010101;" width="340"><p class="tablebodytext">The traffic coordinator is working on the shipment and the freight forwarder cannot edit it. The traffic coordinator must give ownership of the shipment to freight forwarder if the freight forwarder needs to edit the shipment.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="340"><p class="tablebodytext">Arrived (FF)</p>
+</td>
+<td style="border:1px solid #010101;" width="340"><p class="tablebodytext">All the packages in the shipment have reached the arrival point and ATA (Actual Time of Arrival) has been entered for all the packages. The freight forwarder has the ownership of the shipment and can edit the actual dates, if required.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="340"><p class="tablebodytext">Arrived (TC)</p>
+</td>
+<td style="border:1px solid #010101;" width="340"><p class="tablebodytext">All the packages in the shipment have reached the arrival point and ATA (Actual Time of Arrival) has been entered for all the packages. The traffic coordinator has the ownership of the shipment and can edit the actual dates, if required.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="340"><p class="tablebodytext">Completed</p>
+</td>
+<td style="border:1px solid #010101;" width="340"><p class="tablebodytext">The traffic coordinator has marked the shipment as complete and the shipment can no longer be edited.</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext"></p>
+
+
+<input id="topicId" type="hidden" value="827133" />
+<input id="topicDescription" type="hidden" value="Shipment Statuses" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 6/9/2017 12:59:59 AM" />-->
+</body>
+</html>

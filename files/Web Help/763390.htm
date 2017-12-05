@@ -1,0 +1,37 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> HLO calculation </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('816722');highlight('859742')}">
+<h2 id="t859742" class="heading2">HLO calculation</h2>
+<p class="bodytext"><strong class="specialbold">HLO Type</strong> and <strong class="specialbold">HLO Extra</strong> values are computed by comparing the weight and the dimensions of a package with certain project default values. </p>
+<p class="bodytext"><strong class="specialbold">HLO Extra</strong> is set to <strong class="specialbold">True</strong>, if the weight or any of the dimensions of a package is greater than the corresponding values of ZP_EXT_WGT, ZP_EXT_X, ZP_EXT_Y and ZP_EXT_Z. </p>
+<p class="bodytext"><strong class="specialbold">HLO Type</strong> is set to <strong class="specialbold">Sea Freight</strong>, if the weight or any of the dimensions of a package is greater than the corresponding values of ZP_EXC_WGT, ZP_EXC_X, ZP_EXC_Y and ZP_EXC_Z.</p>
+<p class="bodytext"><strong class="specialbold">HLO Type</strong> is set to<strong class="specialbold"> Inland</strong>, if the weight or any of the dimensions of a package is less than the corresponding values of ZP_EXC_WGT, ZP_EXC_X, ZP_EXC_Y and ZP_EXC_Z but greater than the corresponding values of ZP_MAX_WGT, ZP_MAX_X, ZP_MAX_Y, ZP_MAX_Z.</p>
+<p class="bodytext"><strong class="specialbold">HLO Type</strong> is set to <strong class="specialbold">General Cargo</strong>, if none of the above criteria is met.</p>
+<p class="bodytext"></p>
+
+
+<input id="topicId" type="hidden" value="859742" />
+<input id="topicDescription" type="hidden" value="HLO calculation" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 6/20/2017 12:50:50 AM" />-->
+</body>
+</html>

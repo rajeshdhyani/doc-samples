@@ -1,0 +1,36 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Plan requisition supplements </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('500941');highlight('665623')}">
+<h2 id="t665623" class="heading2">Plan requisition supplements</h2>
+<p class="bodytext">Requisition supplement planning is only available if project default ZP_MS_SUPP is set to Y or E. If the project default is set to E, the supplement planning is enforced, that means that at least one supplement plan must exist for each planned requisition.</p>
+<ol class="listnumber"><li class="listnumber">Click the <strong class="specialbold">Planning </strong>task on the dashboard, or select <strong class="specialbold">Planning </strong>from the <strong class="specialbold">Tasks </strong>list.</li><li class="listnumber">Select a requisition planning item in the tree.</li><li class="listnumber">Click <strong class="specialbold">Planning </strong>to display the Planning section.</li><li class="listnumber">Select the <strong class="specialbold">Milestones </strong>tab.</li><li class="listnumber">Click <strong class="specialbold">Add Supplement Plan</strong> <img id="f380175" src="380175.png" alt="" height="18" width="18" vspace="0" hspace="0" align="bottom" border="0"> to add a requisition supplement plan.</li><li class="listnumber">Type the supplement number in the <strong class="specialbold">Suppl </strong>box.</li><li class="listnumber">Select <strong class="specialbold">Purchase </strong>if the requisition should be used to create an agreement, or do not select the check box if the requisition is for inquiry only.</li><li class="listnumber">Click <strong class="specialbold">ROS Date</strong> <img id="f424153" src="424153.png" alt="CalendarButton" height="16" width="16" vspace="0" hspace="0" align="bottom" border="0"> and select the date when the material is required on site.<p class="listcontinue"><img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> If a requisition is linked to the plan, the minimum ROS date of the requisition line items is displayed. This ROS date can only be changed, if project default ZP_MS_ROS is set to Y.</p>
+</li><li class="listnumber">Type a value in the <strong class="specialbold">Lead Time </strong>box.<p class="listcontinue"><img id="f803308_1" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> The lead time value is interpreted as weeks by default. This can be changed in the M_PCK_MS_CUSTOM.CALC_PLANNED_ISSUE_DATE CIP.</p>
+<p class="listcontinue">The <strong class="specialbold">Planned Issue</strong> date is calculated as ROS Date - Lead Time, and this date cannot be changed.</p>
+</li><li class="listnumber">Click <strong class="specialbold">Save</strong>.</li><li class="listnumber">Click the requisition number<strong class="specialbold"> </strong>to edit the milestones (see <a id="h540937" class="jumptemplate" title="Edit milestone planning" href="540931.htm" target="_self">Edit milestone planning</a>).</li></ol>
+
+
+<input id="topicId" type="hidden" value="665623" />
+<input id="topicDescription" type="hidden" value="Plan requisition supplements" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 1/23/2017 12:20:19 PM" />-->
+</body>
+</html>

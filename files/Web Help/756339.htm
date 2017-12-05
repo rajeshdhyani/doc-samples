@@ -1,0 +1,191 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Edit item shipments </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+</head>
+<body  onload="if (isTOCLoaded()) {expand('392854');highlight('756339')}">
+<h2 id="t756339" class="heading2">Edit item shipments</h2>
+<ol class="listnumber"><li class="listnumber">Click the <strong class="specialbold">Agreements </strong>task on the dashboard. </li><li class="listnumber">Click an agreement number, and click <strong class="specialbold">Item Shipments</strong> in the category panel.</li><li class="listnumber">Insert or update data where needed.<p class="listcontinue">Find a list of the available fields and which of them are editable below.</p>
+</li><li class="listnumber">Click <strong class="specialbold">Save</strong>.</li></ol><p class="bodytext">The grid cells of the <strong class="specialbold">Item Shipments</strong> section are listed below. Where it is not explicitely mentioned, the data cannot be updated.</p>
+<table class="tableintopic" width="604" cellpadding="2" cellspacing="0" border="1" style="border-collapse:collapse; border:1px solid #010101">
+<tr align="left" valign="top">
+<th style="border:1px solid #010101;" width="106"><p class="tableinsidelist-heading">Cell Name</p>
+</th>
+<th style="border:1px solid #010101;" width="499"><p class="tableinsidelist-heading">Comment</p>
+</th>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Pos</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">Agreement line item (position) number.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Sub</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">Agreement sub line item (sub position) number.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">IS Pos</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">Item shipment line item (position) number. </p>
+<p class="tableinsidelist-bodytext"><img id="f803308" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> For item shipments created by the buyer, this position number is increased. For item shipments created by the expediter, the position number is kept and the sub line item number is increased.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">IS Sub</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">Item shipment sub line item (sub position) number.</p>
+<p class="tableinsidelist-bodytext"><img id="f803308_1" src="803308.png" alt="" height="13" width="57" vspace="0" hspace="0" align="bottom" border="0"> Item shipments created by the buyer have a sub line item number of 1. For item shipments created by the expediter, the position number is kept and the sub line item number is increased.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Included</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">Indicates whether the line item is part of the current agreement. If the check box is marked, the line item has been modified on this agreement supplement. Otherwise, it is a position of a previous supplement that has not been changed and is therefore not included on the current agreement supplement.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Quantity</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">Item shipment quantity (updatable). </p>
+<p class="tableinsidelist-bodytext">You cannot update the quantity of a master tag. In the case of an agreement for the corporate or FIM warehouses, the quantity that can be entered is limited by the quantity available in these warehouses.</p>
+<p class="tableinsidelist-bodytext">The number of decimal places is controlled by the setting of ZP_DECPQTY.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Quantity Unit</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">Unit of the quantity. </p>
+<p class="tableinsidelist-bodytext">All units defined for the unit groups WEIGHT, VOLUME, or QUANTITY are available for selection.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Prom Contract</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The date for which the supplier promises to deliver this item shipment (updatable). </p>
+<p class="tableinsidelist-bodytext">In the case of COs, the setting of ZP_PCD_AIS determines whether this field remains empty for the newly created item shipments. If ZP_PCD_AIS is set to N (default), the promised contract date is empty for the additional item shipment that is created to indicate that something was changed (creation of item shipment due to the setting of project default ZP_ISH_QTY). If this project default is set to Y, the value of the previous item shipment is copied. </p>
+<p class="tableinsidelist-bodytext">The earliest promised contract date of all agreement line items appears in the <strong class="specialbold">First Delivery</strong> box on agreement header, and the latest promised contract date of all agreement line items appears in the <strong class="specialbold">Last Delivery</strong> box.</p>
+<p class="bodytext">If the project default ZP_INIT_PC is set to Y (default), this date field is filled with the same value as the Prom Ship field when a new agreement is created. For COs, the value is copied from the previous supplement. If ZP_INIT_PC is set to N, this field remains empty.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Prom Ship</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The date the supplier promises to ship the item (updatable). This date is only of interest if you work with basic expediting. When you create an agreement, this cell is filled as follows: </p>
+<ul class="tablelistbullet"><li class="tablelistbullet">If a quote exists for this agreement and the <strong class="specialbold">Last Ship Date</strong> is filled, this date is copied. </li><li class="tablelistbullet">If there is no quote for the agreement or the <strong class="specialbold">Last Ship Date</strong> is empty, the number of weeks that is stored in <strong class="specialbold">Last Ship</strong> is multiplied by 7 (number of days per week). The resulting number of days is added to the creation date of the agreement.</li><li class="tablelistbullet">For manual purchase orders, the current date is used.</li></ul></td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Req On Site</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The date on which the item is required on site (updatable). This date is only of interest if you work with basic expediting. When a new item shipment is inserted during the agreement creation, this cell is filled with the ROS date of the corresponding requisition line item. If you create a manual purchase order, the cell is filled with the current date.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Delivery Type</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The delivery type of this item shipment (updatable).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Delivery Designation</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The delivery designation of this item shipment (updatable). </p>
+<p class="tableinsidelist-bodytext">Changing the delivery designation implies the update of the routing method. Therefore, the routing method is filled automatically with the default when selecting another delivery designation. For manual purchase orders, the value assigned to project default ZP_DLV_DSG is used. For all other agreements, the delivery designation is copied from the corresponding requisition line item.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Roouting Method</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="bodytext">The name of the routing method of this item shipment (updatable). You can only enter routing methods with a delivery designation equal to the one entered in the <strong class="specialbold">Delivery Designation</strong> cell. </p>
+<p class="tableinsidelist-bodytext">Routing method is an optional field, but if you are working with basic expediting, you must fill in the routing method to be able to approve a PO or NOC. </p>
+<p class="tableinsidelist-bodytext">When item shipments are created, the routing method defined for the agreement header is copied. If this routing method is not valid for the delivery designation, the default routing method is taken. If no default is specified, this cell remains empty.</p>
+<p class="tableinsidelist-bodytext">If you change the routing method, the <strong class="specialbold">Pred On Site </strong>and <strong class="specialbold">Prom On Site</strong> dates are recalculated due to the changed number of transit days. The predicted on site date is only recalculated if project default ZP_EXPDATE is set to Y.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Destination</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The name of that destination within the selected routing method that has been marked as the delivery date.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Ident Code</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">Ident code for the material of this item shipment. </p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Tag Number</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The tag number assigned to this ident.</p>
+<p class="tableinsidelist-bodytext">On a subcontract this cell is labelled with SOW (scope of work) Number.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Commodity Code</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">Commodity code</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Fab Location</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">In the <strong class="specialbold">Fab Location</strong> cell, select the fabrication location.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Inspection Location</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="bodytext">In the I<strong class="specialbold">nspection Location</strong> cell, select the location where the inspection is done.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">MCS Quantity</p>
+<p class="tableinsidelist-bodytext">IRC Quantity</p>
+<p class="tableinsidelist-bodytext">Release Note Quantity</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The actual MCS (material certificate summary), IRC (inspection release note), and release note quantity as maintained by expediting.</p>
+<p class="tableinsidelist-bodytext">These quantities are only of interest if you use extended expediting (ZP_NEW_EXP is set to Y). You need this information for the item shipments of COs if quantities are reduced. As you cannot approve a CO if its item shipments are going to replace item shipments with assigned MCS, IRC, or release note numbers with a lower quantity, you can use this look up information to see how quantities must be adjusted properly. If you ignore this information and try to approve the CO nevertheless, a message is displayed and the item shipments with violations against this rule.</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Received Quantity</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The actual received quantity (posted or not).</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td style="border:1px solid #010101;" width="106"><p class="tableinsidelist-bodytext">Rental Return Quantity</p>
+</td>
+<td style="border:1px solid #010101;" width="499"><p class="tableinsidelist-bodytext">The total of the issued quantity (return quantity) for this item shipment, only displayed for rental orders (RO).</p>
+</td>
+</tr>
+
+</table>
+<p class="bodytext">The ident short description and ident deviation of the selected item shipment are shown on the <strong class="specialbold">Description </strong>tab at the bottom.</p>
+
+
+<input id="topicId" type="hidden" value="756339" />
+<input id="topicDescription" type="hidden" value="Edit item shipments" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 11/9/2016 4:38:35 AM" />-->
+</body>
+</html>

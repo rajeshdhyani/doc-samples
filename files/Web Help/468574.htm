@@ -1,0 +1,85 @@
+﻿<!-- saved from url=(0014)about:internet -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title> Edit supplier information </title>
+<script type="text/javascript">
+        function isTOCLoaded() {
+            //this function for loading the topic within the application if loaded by itself
+            //i.e. open the topic .htm file or as search engines link
+            var url = window.location.href;
+            var baseUrl = url.substring(0, url.lastIndexOf("/") + 1);
+            var topicFile = url.substring(url.lastIndexOf("/") + 1);
+            var newUrl = baseUrl + "index.htm#" + topicFile;
+            location.href = newUrl;
+            return false;
+        }
+</script>
+<link rel="stylesheet" href="webhelp.css">
+<script language="javascript" type="text/javascript" src="dhtml_popup.js"></script>
+</head>
+<body  onload="if (isTOCLoaded()) {expand('447923');expand('392854');highlight('468574')}">
+<h3 id="t468574" class="heading3">Edit supplier information</h3>
+<p class="bodytext">All information about the supplier or subcontractor who is assigned to the agreement is displayed on the <strong class="specialbold">Supplier</strong> tab.</p>
+<ol class="listnumber"><li class="listnumber">Click <strong class="specialbold">Supplier </strong>on the category panel.</li><li class="listnumber">Click <strong class="specialbold">Supplier </strong><img id="f471290" src="471290.png" alt="LOVButton" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"> and select the name of the supplier or subcontractor to be assigned to this agreement.</li><li class="listnumber">Click <strong class="specialbold">Contact</strong> <img id="f471290_1" src="471290.png" alt="LOVButton" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"> and select the contact person in the supplier's company. </li><li class="listnumber">Click <strong class="specialbold">Manufacturer </strong><img id="f471290_2" src="471290.png" alt="LOVButton" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"> and select the name of the supplier's manufacturer. This information is not available for subcontract agreements.</li><li class="listnumber">Click <strong class="specialbold">Country </strong><img id="f471290_3" src="471290.png" alt="LOVButton" height="14" width="14" vspace="0" hspace="0" align="bottom" border="0"><strong class="specialbold"> </strong>and select the name of the supplier's country.</li><li class="listnumber">Click <strong class="specialbold">Save</strong>.</li><li class="listnumber">If the agreement is issued, you can rate the supplier's performance for this agreement in the <strong class="specialbold">Performance Score</strong> box.<p class="listcontinue">The possible performance score values are:</p>
+<table class="tableintopic" width="176" cellpadding="2" cellspacing="0" border="0" style="border-collapse:collapse">
+<tr align="left" valign="top">
+<td valign="middle" width="48"><p class="tableinsidelist-heading"><strong class="specialbold">Value</strong></p>
+</td>
+<td valign="middle" width="128"><p class="tableheading"><strong class="specialbold">Rating</strong></p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td valign="middle" width="48"><p class="tableinsidelist-bodytext">0</p>
+</td>
+<td valign="middle" width="128"><p class="tableinsidelist-bodytext">Unrated</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td valign="middle" width="48"><p class="tableinsidelist-bodytext">1</p>
+</td>
+<td valign="middle" width="128"><p class="tableinsidelist-bodytext">Poor</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td valign="middle" width="48"><p class="tableinsidelist-bodytext">2</p>
+</td>
+<td valign="middle" width="128"><p class="tableinsidelist-bodytext">Below Average</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td valign="middle" width="48"><p class="tableinsidelist-bodytext">3</p>
+</td>
+<td valign="middle" width="128"><p class="tableinsidelist-bodytext">Average</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td valign="middle" width="48"><p class="tableinsidelist-bodytext">4</p>
+</td>
+<td valign="middle" width="128"><p class="tableinsidelist-bodytext">Above average</p>
+</td>
+</tr>
+<tr align="left" valign="top">
+<td valign="middle" width="48"><p class="tableinsidelist-bodytext">5</p>
+</td>
+<td valign="middle" width="128"><p class="tableinsidelist-bodytext">Excellent</p>
+</td>
+</tr>
+
+</table>
+</li></ol><p class="bodytext"><a id="h549412" class="expandingblocktemplate" title="Change supplier" href="javascript:toggleBlock('549412')" target="_self"><img id="i549412" class="expandicon" src="arrowright.gif" alt="" border="0">Update supplier information</a></p>
+<div id="d549412" class="expandingblock" style="display:none"><p class="bodytext">You can update the supplier information if the agreement has the following criteria:</p>
+<ul class="listbullet2"><li class="listbullet2">It is not approved.</li><li class="listbullet2">It is not a purchase order that has been created from a notice of commitment.</li><li class="listbullet2">It is a manually created purchase order (without a requisition) but no blanket order has been assigned.</li><li class="listbullet2">It is not based on a bid unless you have the CHANGE SUPPLIER privilege.</li><li class="listbullet2">It is not a corporate warehouse agreement or a FIM warehouse agreement.</li></ul><p class="bodytext">The setting of project default ZP_CHSUPCO controls whether the supplier can be updated on a change order (CO). If this project default is set to Y (default), a supplier can be changed even on a CO. If this project default is set to N, you can change the supplier on the base (or first) supplement but not on higher supplements of type CO.</p>
+<p class="bodytext">When the supplier is changed, the addresses assigned to the agreement are deleted and the supplier's address for the address type used as the default for agreements is assigned to the agreement instead. Additionally, the entries for the contact person and the supplier's manufacturer are deleted. You can select new values for the new supplier from the select lists in the <strong class="specialbold">Contact </strong>and <strong class="specialbold">Manufacturer</strong> boxes. Properties that have been assigned to the old supplier will be replaced with those of the new supplier.</p>
+<p class="bodytext">If you update the supplier on a change order, all the changes with respect to addresses, contacts, manufacturer, and properties are only applied to the current supplement. But the supplier is replaced on all supplements of the current agreement cycle.</p>
+</div>
+
+
+<input id="topicId" type="hidden" value="468574" />
+<input id="topicDescription" type="hidden" value="Edit supplier information" />
+<!--<input id="footer-modified" type="hidden" value="Last modified: 8/3/2016 8:22:10 AM" />-->
+</body>
+</html>
